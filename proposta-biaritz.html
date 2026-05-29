@@ -253,7 +253,7 @@
   .pdot.active { background: var(--cream-dim); height: 18px; border-radius: 3px; }
 
   @media (max-width: 768px) {
-    .slide { padding: 80px 24px 40px; }
+    .slide { padding: 80px 20px 40px; }
     #s1 .slide-inner, .devices-wrap, .ds-grid, .plans-grid, .sim-wrap { grid-template-columns: 1fr; }
     .manut-compare { grid-template-columns: 1fr; gap: 24px 0; }
     .manut-divider-v { display: none; }
@@ -272,6 +272,13 @@
     .vis-bottom { grid-template-columns: 1fr; gap: 28px; }
     .vis-addon-row { grid-template-columns: 1fr auto; }
     .vis-addon-desc { display: none; }
+    .progress { display: none; }
+    .body-text { font-size: 16px; max-width: 100%; }
+    .vis-body, .perf-item-body, .prob-body, .manut-desc { font-size: 15px; line-height: 1.75; }
+    .vis-title, .perf-item-title { font-size: 19px; }
+    .vis-label, .perf-item-label, .eyebrow, .vis-addons-title, .ds-section-title { font-size: 11px; }
+    .plan-item { font-size: 14px; }
+    .closing-box { padding: 24px 20px; }
   }
 </style>
 </head>
@@ -282,8 +289,8 @@
   <div class="nav-links">
     <a href="#s1">Início</a>
     <a href="#s2">Problema</a>
-    <a href="#s3">Prévia</a>
-    <a href="#s4">Design</a>
+    <a href="#s3">Design</a>
+    <a href="#s4">Prévia</a>
     <a href="#s5">Visibilidade</a>
     <a href="#s6">Performance</a>
     <a href="#s7">Planos</a>
@@ -345,46 +352,8 @@
   </div>
 </section>
 
-<!-- SLIDE 3 — PRÉVIA -->
-<section class="slide" id="s3" style="background:var(--cream);">
-  <div class="slide-inner">
-    <h2>Já temos o modelo pronto</h2>
-    <p class="body-text" style="margin-bottom:28px;">Abaixo o modelo desenvolvido para a Biaritz — versão desktop e mobile.</p>
-
-    <div class="preview-label">VERSÃO DESKTOP E MOBILE</div>
-
-    <div class="devices-wrap">
-      <div class="browser">
-        <div class="browser-bar">
-          <div class="bdot" style="background:oklch(0.55 0.175 22);"></div>
-          <div class="bdot" style="background:oklch(0.73 0.143 72);"></div>
-          <div class="bdot" style="background:oklch(0.60 0.118 161);"></div>
-          <div class="burl">biaritz.com.br</div>
-        </div>
-        <img class="browser-preview" src="preview-desktop.png" alt="Prévia desktop Biaritz">
-        <div style="font-size:10px; color:var(--gold-muted); background:oklch(0.87 0.10 77 / 0.18); border:1px solid oklch(0.87 0.10 77 / 0.35); border-radius:6px; padding:7px 10px; margin-top:10px; line-height:1.5; letter-spacing:0.01em;">
-          Este é apenas um preview — não representa a qualidade final do projeto.
-        </div>
-      </div>
-
-      <div>
-        <div class="phone">
-          <div class="phone-inner">
-            <div class="phone-notch"><div class="phone-pill"></div></div>
-            <img class="phone-preview" src="preview-mobile.png" alt="Prévia mobile Biaritz">
-          </div>
-        </div>
-        <div style="font-size:10px; color:var(--text-light); text-align:center; margin-top:8px; letter-spacing:0.06em;">versão mobile</div>
-        <div style="font-size:10px; color:var(--gold-muted); background:oklch(0.87 0.10 77 / 0.18); border:1px solid oklch(0.87 0.10 77 / 0.35); border-radius:6px; padding:7px 10px; margin-top:10px; line-height:1.5; letter-spacing:0.01em;">
-          Este é apenas um preview — não representa a qualidade final do projeto.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SLIDE 4 — DESIGN SYSTEM -->
-<section class="slide" id="s4" style="background:var(--bg-alt);">
+<!-- SLIDE 3 — DESIGN SYSTEM -->
+<section class="slide" id="s3" style="background:var(--bg-alt);">
   <div class="slide-inner">
     <h2>Design extraído<br>da marca</h2>
     <p class="body-text" style="margin-bottom:8px;">Cores, tipografia e tom baseados no Instagram da Biaritz. Sem reinventar — só profissionalizar.</p>
@@ -419,6 +388,44 @@
             <span style="font-size:10px; background:var(--cream-dark); color:var(--text-mid); padding:3px 10px; border-radius:20px;">Tons terrosos</span>
             <span style="font-size:10px; background:var(--cream-dark); color:var(--text-mid); padding:3px 10px; border-radius:20px;">B2B lojistas</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 4 — PRÉVIA -->
+<section class="slide" id="s4" style="background:var(--cream);">
+  <div class="slide-inner">
+    <h2>Já temos o modelo pronto</h2>
+    <p class="body-text" style="margin-bottom:28px;">Abaixo o modelo desenvolvido para a Biaritz — versão desktop e mobile.</p>
+
+    <div class="preview-label">VERSÃO DESKTOP E MOBILE</div>
+
+    <div class="devices-wrap">
+      <div class="browser">
+        <div class="browser-bar">
+          <div class="bdot" style="background:oklch(0.55 0.175 22);"></div>
+          <div class="bdot" style="background:oklch(0.73 0.143 72);"></div>
+          <div class="bdot" style="background:oklch(0.60 0.118 161);"></div>
+          <div class="burl">biaritz.com.br</div>
+        </div>
+        <img class="browser-preview" src="preview-desktop.png" alt="Prévia desktop Biaritz">
+        <div style="font-size:12px; color:var(--gold-muted); background:oklch(0.87 0.10 77 / 0.18); border:1px solid oklch(0.87 0.10 77 / 0.35); border-radius:6px; padding:7px 10px; margin-top:10px; line-height:1.5; letter-spacing:0.01em;">
+          Este é apenas um preview — não representa a qualidade final do projeto.
+        </div>
+      </div>
+
+      <div>
+        <div class="phone">
+          <div class="phone-inner">
+            <div class="phone-notch"><div class="phone-pill"></div></div>
+            <img class="phone-preview" src="preview-mobile.png" alt="Prévia mobile Biaritz">
+          </div>
+        </div>
+        <div style="font-size:10px; color:var(--text-light); text-align:center; margin-top:8px; letter-spacing:0.06em;">versão mobile</div>
+        <div style="font-size:12px; color:var(--gold-muted); background:oklch(0.87 0.10 77 / 0.18); border:1px solid oklch(0.87 0.10 77 / 0.35); border-radius:6px; padding:7px 10px; margin-top:10px; line-height:1.5; letter-spacing:0.01em;">
+          Este é apenas um preview — não representa a qualidade final do projeto.
         </div>
       </div>
     </div>
@@ -627,7 +634,7 @@
 <script>
 const WPP_NUMBER = '11982105654';
 const slides = ['s1','s2','s3','s4','s5','s6','s7','s8','s9','s10'];
-const slideNames = ['Início','Problema','Prévia','Design','Visibilidade','Velocidade','Planos','Simulador','Manutenção','Contato'];
+const slideNames = ['Início','Problema','Design','Prévia','Visibilidade','Velocidade','Planos','Simulador','Manutenção','Contato'];
 const prog = document.getElementById('progress');
 slides.forEach((id, i) => {
   const btn = document.createElement('button');
