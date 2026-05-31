@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="3200" viewBox="0 0 1440 3200">
+  <rect width="1440" height="3200" fill="#F8F5F1"/>
+  <rect x="0" y="0" width="1440" height="80" fill="#ffffff"/>
+  <text x="60" y="50" font-size="32" font-family="Georgia">BIARITZ</text>
+  <text x="900" y="50" font-size="18">Coleção   Catálogo   Revendedores   Sobre   Contato</text>
+
+  <rect x="0" y="80" width="1440" height="700" fill="#d8c5b4"/>
+  <text x="120" y="250" font-size="24">COLEÇÃO</text>
+  <text x="120" y="350" font-size="90" font-family="Georgia">INVERNO</text>
+  <text x="120" y="450" font-size="90" font-family="Georgia">2026</text>
+  <rect x="120" y="550" width="180" height="50" fill="#4A3427"/>
+  <text x="145" y="582" fill="white">VER COLEÇÃO</text>
+
+  <rect x="850" y="140" width="450" height="500" fill="#c8b3a0"/>
+  <text x="1010" y="400">FOTO CAMPANHA</text>
+
+  <text x="620" y="860" font-size="28">DESTAQUES</text>
+  <circle cx="250" cy="950" r="55" fill="none" stroke="#4A3427"/>
+  <circle cx="500" cy="950" r="55" fill="none" stroke="#4A3427"/>
+  <circle cx="750" cy="950" r="55" fill="none" stroke="#4A3427"/>
+  <circle cx="1000" cy="950" r="55" fill="none" stroke="#4A3427"/>
+  <circle cx="1250" cy="950" r="55" fill="none" stroke="#4A3427"/>
+
+  <text x="580" y="1080" font-size="32">FEED EDITORIAL</text>
+
+  <rect x="60" y="1140" width="430" height="300" fill="#ddd"/>
+  <rect x="505" y="1140" width="430" height="300" fill="#ccc"/>
+  <rect x="950" y="1140" width="430" height="300" fill="#ddd"/>
+
+  <rect x="60" y="1455" width="430" height="300" fill="#ccc"/>
+  <rect x="505" y="1455" width="430" height="300" fill="#b79d88"/>
+  <rect x="950" y="1455" width="430" height="300" fill="#ccc"/>
+
+  <rect x="60" y="1770" width="430" height="300" fill="#ddd"/>
+  <rect x="505" y="1770" width="430" height="300" fill="#ddd"/>
+  <rect x="950" y="1770" width="430" height="300" fill="#ddd"/>
+
+  <text x="560" y="2200" font-size="32">NOVA COLEÇÃO</text>
+
+  <rect x="60" y="2250" width="300" height="300" fill="#ddd"/>
+  <rect x="390" y="2250" width="300" height="300" fill="#ddd"/>
+  <rect x="720" y="2250" width="300" height="300" fill="#ddd"/>
+  <rect x="1050" y="2250" width="300" height="300" fill="#ddd"/>
+
+  <rect x="60" y="2620" width="1320" height="260" fill="#e8dfd6"/>
+  <text x="100" y="2720" font-size="48" font-family="Georgia">SEJA REVENDEDOR</text>
+  <rect x="1080" y="2680" width="220" height="70" fill="#4A3427"/>
+  <text x="1120" y="2725" fill="white">QUERO REVENDER</text>
+
+  <rect x="0" y="3000" width="1440" height="200" fill="#ffffff"/>
+  <text x="60" y="3090" font-size="40" font-family="Georgia">BIARITZ</text>
+</svg>
