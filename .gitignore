@@ -1,0 +1,10 @@
+# dados de trabalho fora do deploy (grandes)
+OneDrive_1_*/
+*.xls
+*.xlsx
+
+# cache local do wrangler
+.wrangler/
+
+# sistema
+.DS_Store

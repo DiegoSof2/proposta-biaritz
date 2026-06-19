@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biaritz — Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="catalogo">
+  <header class="hdr">
+    <div class="brand">BIARITZ</div>
+    <nav>
+      <a class="off" aria-disabled="true">Coleção</a>
+      <a class="active" href="index.html">Catálogo</a>
+      <a class="off" aria-disabled="true">Revendedores</a>
+      <a class="off" aria-disabled="true">Sobre</a>
+      <a class="off" aria-disabled="true">Contato</a>
+    </nav>
+    <button class="btn-pedido" id="btnPedido">
+      <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M2 3h2l1.5 9h9l1.5-7H5" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="7" cy="16" r="1.2" fill="currentColor"/><circle cx="14" cy="16" r="1.2" fill="currentColor"/></svg>
+      Pedido <span class="ped-count" id="pedidoCount">0</span>
+    </button>
+  </header>
+
+  <div class="search-wrap">
+    <svg class="search-ico" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M14 14l4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+    <input type="search" id="search" class="search" placeholder="Buscar por modelo, referência ou cor…" autocomplete="off">
+  </div>
+
+  <div class="filters-wrap">
+    <div class="filters" id="filters"></div>
+    <button class="filters-arrow" id="filtersArrow" type="button" aria-label="Ver mais categorias"></button>
+  </div>
+  <main class="grid" id="grid"></main>
+  <div class="aviso">🗔 Grade fechada · a partir de 6 pares · mesmo modelo e cor · pedido mínimo 12 pares</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

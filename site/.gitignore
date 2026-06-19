@@ -1,0 +1,16 @@
+# modelos / ferramentas de análise (não vão pro deploy)
+yolov8n.pt
+yolo.json
+fotos-analise.json
+revisao-fotos.txt
+scripts/
+
+# mockups / wireframes de trabalho
+biaritz-home-wireframe.svg
+desktop.png
+mobile.png
+mockup-desktop.png
+mockup-mobile.png
+
+# sistema
+.DS_Store

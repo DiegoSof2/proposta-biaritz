@@ -1,0 +1,4760 @@
+[
+  {
+    "id": "10429370-ambar",
+    "ref": "10429370",
+    "cor": "Ambar",
+    "nome": "",
+    "categoria": "Anabela",
+    "precoMin": 139.9,
+    "precoMax": 139.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/125,90 - 139,90/10429370AMBAR.jpg",
+    "foto": "fotos/10429370-ambar.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Anabela",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10429370-off-white",
+    "ref": "10429370",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Anabela",
+    "precoMin": 139.9,
+    "precoMax": 139.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/125,90 - 139,90/10429370OFFWHITE.png",
+    "foto": "fotos/10429370-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Anabela",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "33223303-ouro",
+    "ref": "33223303",
+    "cor": "Ouro",
+    "nome": "",
+    "categoria": "Anabela",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2025",
+    "arquivo": "4 - ANABELA/115,90 - 129,90/33223303-001-D1.jpg",
+    "foto": "fotos/33223303-ouro.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Anabela",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "33223303-caramelo",
+    "ref": "33223303",
+    "cor": "Caramelo",
+    "nome": "",
+    "categoria": "Anabela",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#A9682F",
+    "estacao": "Verão 2025",
+    "arquivo": "4 - ANABELA/115,90 - 129,90/33223303-001-D1.jpg",
+    "foto": "fotos/33223303-caramelo.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Anabela",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "33223303-off-white",
+    "ref": "33223303",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Anabela",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2025",
+    "arquivo": "4 - ANABELA/115,90 - 129,90/33223303-001-D1.jpg",
+    "foto": "fotos/33223303-off-white.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Anabela",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "6923534-preto",
+    "ref": "6923534",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Anabela",
+    "precoMin": 105.9,
+    "precoMax": 105.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "4 - ANABELA/89,90 - 105,90/6923534-002-D1.jpg",
+    "foto": "fotos/6923534-preto.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Anabela",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "451885-off-white",
+    "ref": "451885",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Birkens",
+    "precoMin": 69.9,
+    "precoMax": 69.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "2 - FLATS E PAPETES/59,90 - 69,90/451885OFFWHITE.jpg",
+    "foto": "fotos/451885-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "451945-ambar-caramelo",
+    "ref": "451945",
+    "cor": "Ambar Caramelo",
+    "nome": "",
+    "categoria": "Birkens",
+    "precoMin": 69.9,
+    "precoMax": 69.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2026",
+    "arquivo": "2 - FLATS E PAPETES/59,90 - 69,90/451945AMBAR.jpg",
+    "foto": "fotos/451945-ambar-caramelo.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "451945-preto",
+    "ref": "451945",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Birkens",
+    "precoMin": 69.9,
+    "precoMax": 69.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "2 - FLATS E PAPETES/59,90 - 69,90/451945PRETO.png",
+    "foto": "fotos/451945-preto.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "fundo bagunçado"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "q898180-preto-ouro",
+    "ref": "Q898180",
+    "cor": "Preto Ouro",
+    "nome": "",
+    "categoria": "Birkens",
+    "precoMin": 69.9,
+    "precoMax": 69.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "2 - FLATS E PAPETES/59,90 - 69,90/Q898180PRETO.png",
+    "foto": "fotos/q898180-preto-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "t898169-preto-ouro",
+    "ref": "T898169",
+    "cor": "Preto Ouro",
+    "nome": "",
+    "categoria": "Birkens",
+    "precoMin": 69.9,
+    "precoMax": 69.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "2 - FLATS E PAPETES/59,90 - 69,90/T898169PRETO.jpg",
+    "foto": "fotos/t898169-preto-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "y898164-preto-prata",
+    "ref": "Y898164",
+    "cor": "Preto Prata",
+    "nome": "",
+    "categoria": "Birkens",
+    "precoMin": 69.9,
+    "precoMax": 69.9,
+    "corHex": "#2A2A2E",
+    "estacao": "Verão 2026",
+    "arquivo": "2 - FLATS E PAPETES/59,90 - 69,90/Y898164PRETO.png",
+    "foto": "fotos/y898164-preto-prata.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "1100-bordo-metalizado",
+    "ref": "1100",
+    "cor": "Bordo Metalizado",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 59.9,
+    "precoMax": 59.9,
+    "corHex": "#6E2A2E",
+    "estacao": "Inverno 2023",
+    "arquivo": "11 - BOTAS/49,90 - 59,90/1100 BORDO COURO LEGITIMO.png",
+    "foto": "fotos/1100-bordo-metalizado.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "1915-couro-preto",
+    "ref": "1915",
+    "cor": "Couro Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 215.9,
+    "precoMax": 215.9,
+    "corHex": "#8A5A38",
+    "estacao": "Inverno 2024",
+    "arquivo": "11 - BOTAS/199,90 - 215,90/1915 PRETO.png",
+    "foto": "fotos/1915-couro-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19925681-preto",
+    "ref": "19925681",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 209.9,
+    "precoMax": 209.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/189,90 - 209,90/19925681 PRETO (7).jpg",
+    "foto": "fotos/19925681-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19925681-rocha",
+    "ref": "19925681",
+    "cor": "Rocha",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 209.9,
+    "precoMax": 209.9,
+    "corHex": "#8A8378",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/189,90 - 209,90/19925681 ROCHA (3).jpg",
+    "foto": "fotos/19925681-rocha.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19925681-new-whisky",
+    "ref": "19925681",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 209.9,
+    "precoMax": 209.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/189,90 - 209,90/19925681 NEW WHISKY.jpg",
+    "foto": "fotos/19925681-new-whisky.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19925682-preto",
+    "ref": "19925682",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 185.9,
+    "precoMax": 185.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/165,90 - 185,90/19925682 PRETO.jpg",
+    "foto": "fotos/19925682-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19925682-rocha",
+    "ref": "19925682",
+    "cor": "Rocha",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 185.9,
+    "precoMax": 185.9,
+    "corHex": "#8A8378",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/165,90 - 185,90/19925682 ROCHA.jpg",
+    "foto": "fotos/19925682-rocha.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19925682-new-whisky",
+    "ref": "19925682",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 185.9,
+    "precoMax": 185.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/165,90 - 185,90/19925682 CARAMELO.jpg",
+    "foto": "fotos/19925682-new-whisky.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "20125853-rocha",
+    "ref": "20125853",
+    "cor": "Rocha",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 245.9,
+    "precoMax": 245.9,
+    "corHex": "#8A8378",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/219,90 - 245,90/20125853 ROCHA (6).jpg",
+    "foto": "fotos/20125853-rocha.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "20125853-new-whisky",
+    "ref": "20125853",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 245.9,
+    "precoMax": 245.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/219,90 - 245,90/20125853 PRETO (2).jpg",
+    "foto": "fotos/20125853-new-whisky.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "20125853-preto",
+    "ref": "20125853",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 245.9,
+    "precoMax": 245.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/219,90 - 245,90/20125853 PRETO (2).jpg",
+    "foto": "fotos/20125853-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "20125944-preto",
+    "ref": "20125944",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 199.9,
+    "precoMax": 199.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/179,90 - 199,90/20125944 PRETO (2).jpg",
+    "foto": "fotos/20125944-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "20125944-nogueira",
+    "ref": "20125944",
+    "cor": "Nogueira",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 199.9,
+    "precoMax": 199.9,
+    "corHex": "#5B4636",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/179,90 - 199,90/20125944 NOGUEIRA.jpg",
+    "foto": "fotos/20125944-nogueira.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "21625809-preto",
+    "ref": "21625809",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 209.9,
+    "precoMax": 209.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/189,90 - 209,90/21625809 PRETO (4).jpg",
+    "foto": "fotos/21625809-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "21625809-new-whisky",
+    "ref": "21625809",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 209.9,
+    "precoMax": 209.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/189,90 - 209,90/21625809 NEW WHISKY (2).jpg",
+    "foto": "fotos/21625809-new-whisky.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "21625809-rocha",
+    "ref": "21625809",
+    "cor": "Rocha",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 209.9,
+    "precoMax": 209.9,
+    "corHex": "#8A8378",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/189,90 - 209,90/21625809 ROCHA (2).jpg",
+    "foto": "fotos/21625809-rocha.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "21725916-new-whisky",
+    "ref": "21725916",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 189.9,
+    "precoMax": 189.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/169,90 - 189,90/21725916 NEW WHISKY (5).jpg",
+    "foto": "fotos/21725916-new-whisky.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "21725916-preto",
+    "ref": "21725916",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 189.9,
+    "precoMax": 189.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/169,90 - 189,90/21725916 PRETO.jpg",
+    "foto": "fotos/21725916-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "21725916-rocha",
+    "ref": "21725916",
+    "cor": "Rocha",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 189.9,
+    "precoMax": 189.9,
+    "corHex": "#8A8378",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/169,90 - 189,90/21725916 ROCHA.jpg",
+    "foto": "fotos/21725916-rocha.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "22826044-new-whisky",
+    "ref": "22826044",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 185.9,
+    "precoMax": 185.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/165,90 - 185,90/22826044 NEW WHISKY.jpg",
+    "foto": "fotos/22826044-new-whisky.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "22826044-preto",
+    "ref": "22826044",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 185.9,
+    "precoMax": 185.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/165,90 - 185,90/22826044 PRETO (2).jpg",
+    "foto": "fotos/22826044-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "22826044-rocha",
+    "ref": "22826044",
+    "cor": "Rocha",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 185.9,
+    "precoMax": 185.9,
+    "corHex": "#8A8378",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/165,90 - 185,90/22826044 ROCHA (3).jpg",
+    "foto": "fotos/22826044-rocha.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "22826045-preto",
+    "ref": "22826045",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 235.9,
+    "precoMax": 235.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/209,90 - 235,90/22826045 PRETO (2).jpg",
+    "foto": "fotos/22826045-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "22826045-new-whisky",
+    "ref": "22826045",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 235.9,
+    "precoMax": 235.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/209,90 - 235,90/22826045 NEW WHISKY.jpg",
+    "foto": "fotos/22826045-new-whisky.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "22826045-rocha",
+    "ref": "22826045",
+    "cor": "Rocha",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 235.9,
+    "precoMax": 235.9,
+    "corHex": "#8A8378",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/209,90 - 235,90/22826045 ROCHA (2).jpg",
+    "foto": "fotos/22826045-rocha.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "2401-cafe",
+    "ref": "2401",
+    "cor": "Cafe",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 329.9,
+    "precoMax": 329.9,
+    "corHex": "#5A3B22",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/299,90 - 329,90/2401 CAFÉ COURO (2).jpg",
+    "foto": "fotos/2401-cafe.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "2402-trufa",
+    "ref": "2402",
+    "cor": "Trufa",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 239.9,
+    "precoMax": 239.9,
+    "corHex": "#6E5742",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/215,90 - 239,90/2402 TRUFA COURO (3).jpg",
+    "foto": "fotos/2402-trufa.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "2402-caramelo",
+    "ref": "2402",
+    "cor": "Caramelo",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 239.9,
+    "precoMax": 239.9,
+    "corHex": "#A9682F",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/215,90 - 239,90/2402 CAFE COURO (2).jpg",
+    "foto": "fotos/2402-caramelo.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "2402-preto",
+    "ref": "2402",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 239.9,
+    "precoMax": 239.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2026",
+    "arquivo": "11 - BOTAS/215,90 - 239,90/2402 CAFE COURO (2).jpg",
+    "foto": "fotos/2402-preto.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "411073-preto",
+    "ref": "411073",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 299.9,
+    "precoMax": 299.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2024",
+    "arquivo": "11 - BOTAS/279,90 - 299,90/411073 PRETO COURO (2).jpg",
+    "foto": "fotos/411073-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "434343-camurca-cedro",
+    "ref": "434343",
+    "cor": "Camurça Cedro",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 395.9,
+    "precoMax": 395.9,
+    "corHex": null,
+    "estacao": "Inverno 2025",
+    "arquivo": "11 - BOTAS/359,90 - 395,90/434343 CEDRO COURO (1).jpg",
+    "foto": "fotos/434343-camurca-cedro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "7981a-preto",
+    "ref": "7981A",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Botas",
+    "precoMin": 215.9,
+    "precoMax": 215.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2024",
+    "arquivo": "11 - BOTAS/199,90 - 215,90/7981A PRETO.jpg",
+    "foto": "fotos/7981a-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "ch5008-verde",
+    "ref": "CH5008",
+    "cor": "Verde",
+    "nome": "",
+    "categoria": "Chinelos",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#4F6B43",
+    "estacao": "Inverno 2026",
+    "arquivo": "12 - CHINELOS/29,90 - 39,90/CH5008 VERDE.jpg",
+    "foto": "fotos/ch5008-verde.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "ch5008-mostarda",
+    "ref": "CH5008",
+    "cor": "Mostarda",
+    "nome": "",
+    "categoria": "Chinelos",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#C9982B",
+    "estacao": "Inverno 2026",
+    "arquivo": "12 - CHINELOS/29,90 - 39,90/CH5008 MOSTARDA.jpg",
+    "foto": "fotos/ch5008-mostarda.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "dv26-whisky",
+    "ref": "DV26",
+    "cor": "Whisky",
+    "nome": "",
+    "categoria": "Flats e Papetes",
+    "precoMin": 79.9,
+    "precoMax": 79.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Verão 2026",
+    "arquivo": "2 - FLATS E PAPETES/69,90 - 79,90/DV26WHISKY.jpg",
+    "foto": "fotos/dv26-whisky.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "dv26-off-white",
+    "ref": "DV26",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Flats e Papetes",
+    "precoMin": 79.9,
+    "precoMax": 79.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "2 - FLATS E PAPETES/69,90 - 79,90/DV26OFFWHITE.jpg",
+    "foto": "fotos/dv26-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "kc2144-preto",
+    "ref": "KC2144",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Flats e Papetes",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "2 - FLATS E PAPETES/39,90 - 49,90/KC2144PRETO.png",
+    "foto": "fotos/kc2144-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "kc2144-carvalho",
+    "ref": "KC2144",
+    "cor": "Carvalho",
+    "nome": "",
+    "categoria": "Flats e Papetes",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#6B5238",
+    "estacao": "Verão 2025",
+    "arquivo": "2 - FLATS E PAPETES/39,90 - 49,90/KC2144CARVALHO.png",
+    "foto": "fotos/kc2144-carvalho.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "kc2276-preto",
+    "ref": "KC2276",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Flats e Papetes",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "2 - FLATS E PAPETES/39,90 - 49,90/KC2276PRETO.png",
+    "foto": "fotos/kc2276-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "kc2276-amendoa",
+    "ref": "KC2276",
+    "cor": "Amendoa",
+    "nome": "",
+    "categoria": "Flats e Papetes",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": null,
+    "estacao": "Verão 2025",
+    "arquivo": "2 - FLATS E PAPETES/39,90 - 49,90/KC2276AMENDOA.png",
+    "foto": "fotos/kc2276-amendoa.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "kc2276-carvalho",
+    "ref": "KC2276",
+    "cor": "Carvalho",
+    "nome": "",
+    "categoria": "Flats e Papetes",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#6B5238",
+    "estacao": "Verão 2025",
+    "arquivo": "2 - FLATS E PAPETES/39,90 - 49,90/KC2276CARVALHO.png",
+    "foto": "fotos/kc2276-carvalho.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "kc2278-carvalho",
+    "ref": "KC2278",
+    "cor": "Carvalho",
+    "nome": "",
+    "categoria": "Flats e Papetes",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#6B5238",
+    "estacao": "Verão 2025",
+    "arquivo": "2 - FLATS E PAPETES/39,90 - 49,90/KC2278CARVALHO.png",
+    "foto": "fotos/kc2278-carvalho.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "zx2421-off-white-ouro-fosco",
+    "ref": "ZX2421",
+    "cor": "Off White Ouro Fosco",
+    "nome": "",
+    "categoria": "Flats e Papetes",
+    "precoMin": 59.9,
+    "precoMax": 59.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2026",
+    "arquivo": "2 - FLATS E PAPETES/49,90 - 59,90/ZX2421 OFF WHITE.jpg",
+    "foto": "fotos/zx2421-off-white-ouro-fosco.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "35332897-rosado",
+    "ref": "35332897",
+    "cor": "Rosado",
+    "nome": "",
+    "categoria": "Mary Jane",
+    "precoMin": 59.9,
+    "precoMax": 59.9,
+    "corHex": "#D8A39A",
+    "estacao": "Inverno 2024",
+    "arquivo": "",
+    "foto": "fotos/_placeholder.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "sem foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "281996-ambar",
+    "ref": "281996",
+    "cor": "Ambar",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/281996 AMBAR.png",
+    "foto": "fotos/281996-ambar.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "281996-off-white",
+    "ref": "281996",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/281996 OFFWHITE.png",
+    "foto": "fotos/281996-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "532001-off-white",
+    "ref": "532001",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/532001-001-D4.jpg",
+    "foto": "fotos/532001-off-white.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "564079-off-white-prata",
+    "ref": "564079",
+    "cor": "Off White Prata",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#BFC1C2",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/29,90 - 39,90/564079 OFF WHITE .jpeg",
+    "foto": "fotos/564079-off-white-prata.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "791967-trufa",
+    "ref": "791967",
+    "cor": "Trufa",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#6E5742",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/35,90 - 45,90/791967TRUFA.png",
+    "foto": "fotos/791967-trufa.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "791967-preto",
+    "ref": "791967",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/35,90 - 45,90/791967PRETO.png",
+    "foto": "fotos/791967-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "791967-ambar",
+    "ref": "791967",
+    "cor": "Ambar",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/35,90 - 45,90/791967AMBAR.png",
+    "foto": "fotos/791967-ambar.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "791968-trufa",
+    "ref": "791968",
+    "cor": "Trufa",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#6E5742",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/791968TRUFA.png",
+    "foto": "fotos/791968-trufa.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "791968-ambar",
+    "ref": "791968",
+    "cor": "Ambar",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/791968AMBAR.png",
+    "foto": "fotos/791968-ambar.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "791968-preto",
+    "ref": "791968",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/791968PRETO.png",
+    "foto": "fotos/791968-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "951890-off-white",
+    "ref": "951890",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/35,90 - 45,90/951890OFFWHITE.png",
+    "foto": "fotos/951890-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "951942-trufa",
+    "ref": "951942",
+    "cor": "Trufa",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#6E5742",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/35,90 - 45,90/951942TRUFA.jpg",
+    "foto": "fotos/951942-trufa.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "951942-preto",
+    "ref": "951942",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/35,90 - 45,90/951942PRETO.png",
+    "foto": "fotos/951942-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "ff2272-prata-velho",
+    "ref": "FF2272",
+    "cor": "Prata Velho",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#9A9A93",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/29,90 - 39,90/FF2272 PRATA VELHO.jpeg",
+    "foto": "fotos/ff2272-prata-velho.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "ff2272-off-white",
+    "ref": "FF2272",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/29,90 - 39,90/FF2272 OFF WHITE.jpeg",
+    "foto": "fotos/ff2272-off-white.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "ff2272-cobre",
+    "ref": "FF2272",
+    "cor": "Cobre",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#B06E3F",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/29,90 - 39,90/FF2272 COBRE.jpeg",
+    "foto": "fotos/ff2272-cobre.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "i383110-preto-ouro",
+    "ref": "I383110",
+    "cor": "Preto Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/I383110PRETO.png",
+    "foto": "fotos/i383110-preto-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "i383110-terra-ouro",
+    "ref": "I383110",
+    "cor": "Terra Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/I383110TERRA.png",
+    "foto": "fotos/i383110-terra-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "i383112-jaguatirica-ouro",
+    "ref": "I383112",
+    "cor": "Jaguatirica Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/I383112JAGUATIRICA.png",
+    "foto": "fotos/i383112-jaguatirica-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "i383148-terra-ouro",
+    "ref": "I383148",
+    "cor": "Terra Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/35,90 - 45,90/I383148TERRA.png",
+    "foto": "fotos/i383148-terra-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "i383148-preto-prata",
+    "ref": "I383148",
+    "cor": "Preto Prata",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#2A2A2E",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/35,90 - 45,90/I383148PRETO.png",
+    "foto": "fotos/i383148-preto-prata.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "j101022-terra-marron-ouro",
+    "ref": "J101022",
+    "cor": "Terra Marron Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/J101022TERRA.png",
+    "foto": "fotos/j101022-terra-marron-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "j101022-preto-ouro",
+    "ref": "J101022",
+    "cor": "Preto Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/J101022PRETO.png",
+    "foto": "fotos/j101022-preto-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "j383132-terra-ouro",
+    "ref": "J383132",
+    "cor": "Terra Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/J383132TERRA.png",
+    "foto": "fotos/j383132-terra-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "j383132-preto-ouro",
+    "ref": "J383132",
+    "cor": "Preto Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/J383132PRETO.png",
+    "foto": "fotos/j383132-preto-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "k212032-off-white-ouro",
+    "ref": "K212032",
+    "cor": "Off White Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/K212032OFFWHITE.png",
+    "foto": "fotos/k212032-off-white-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "k212032-terra-ouro",
+    "ref": "K212032",
+    "cor": "Terra Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/K212032TERRA.png",
+    "foto": "fotos/k212032-terra-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "k212032-exercito-ouro",
+    "ref": "K212032",
+    "cor": "Exercito Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/K212032EXERCITO.png",
+    "foto": "fotos/k212032-exercito-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "kx2350-ambar",
+    "ref": "KX2350",
+    "cor": "Ambar",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/KX2350-001-D2.jpg",
+    "foto": "fotos/kx2350-ambar.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto",
+      "foto borrada"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "kx2350-off-white",
+    "ref": "KX2350",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/KX2350-001-D2.jpg",
+    "foto": "fotos/kx2350-off-white.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto",
+      "foto borrada"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "kx2356-preto",
+    "ref": "KX2356",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "2 - FLATS E PAPETES/39,90 - 49,90/KX2356PRETO.png",
+    "foto": "fotos/kx2356-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "l103138-terra-ouro-fosco",
+    "ref": "L103138",
+    "cor": "Terra Ouro Fosco",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/L103138TERRA.jpg",
+    "foto": "fotos/l103138-terra-ouro-fosco.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "l103138-off-white-ouro-fosco",
+    "ref": "L103138",
+    "cor": "Off White Ouro Fosco",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/L103138OFFWHITE.png",
+    "foto": "fotos/l103138-off-white-ouro-fosco.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "l383136-terra-ouro",
+    "ref": "L383136",
+    "cor": "Terra Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/L383136TERRA.png",
+    "foto": "fotos/l383136-terra-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "l383136-off-white-ouro",
+    "ref": "L383136",
+    "cor": "Off White Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/L383136OFFWHITE.jpg",
+    "foto": "fotos/l383136-off-white-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "l383137-jaguatirica-ouro",
+    "ref": "L383137",
+    "cor": "Jaguatirica Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/L383137JAGUATIRICA.jpg",
+    "foto": "fotos/l383137-jaguatirica-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "l383137-carvalho-ouro",
+    "ref": "L383137",
+    "cor": "Carvalho Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#6B5238",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/L383137CARVALHO.png",
+    "foto": "fotos/l383137-carvalho-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "l383137-terra-ouro",
+    "ref": "L383137",
+    "cor": "Terra Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/L383137TERRA.jpg",
+    "foto": "fotos/l383137-terra-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "l383145-preto-ouro-fosco",
+    "ref": "L383145",
+    "cor": "Preto Ouro Fosco",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/L383145 PRETO.png",
+    "foto": "fotos/l383145-preto-ouro-fosco.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "foto borrada"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "l383145-carvalho-ouro-fosco",
+    "ref": "L383145",
+    "cor": "Carvalho Ouro Fosco",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#6B5238",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/L383145 CARVALHO.jpg",
+    "foto": "fotos/l383145-carvalho-ouro-fosco.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "lv2118-cobre",
+    "ref": "LV2118",
+    "cor": "Cobre",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#B06E3F",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/29,90 - 39,90/LV2118 COBRE.jpeg",
+    "foto": "fotos/lv2118-cobre.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "m383179-terra-ouro",
+    "ref": "M383179",
+    "cor": "Terra Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/M383179TERRA.jpg",
+    "foto": "fotos/m383179-terra-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "m383179-preto-prata",
+    "ref": "M383179",
+    "cor": "Preto Prata",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#2A2A2E",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/M383179PRETO.png",
+    "foto": "fotos/m383179-preto-prata.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "n212042-preto-multicolor",
+    "ref": "N212042",
+    "cor": "Preto Multicolor",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/N212042PRETO.png",
+    "foto": "fotos/n212042-preto-multicolor.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "p212034-carvalho-multicolor",
+    "ref": "P212034",
+    "cor": "Carvalho Multicolor",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#6B5238",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/P212034CARVALHO.png",
+    "foto": "fotos/p212034-carvalho-multicolor.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "p212043-terra-multicolor",
+    "ref": "P212043",
+    "cor": "Terra Multicolor",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/P212043TERRA.png",
+    "foto": "fotos/p212043-terra-multicolor.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "p383146-terra-ouro",
+    "ref": "P383146",
+    "cor": "Terra Ouro",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/P383146TERRA.png",
+    "foto": "fotos/p383146-terra-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "p383146-preto-prata",
+    "ref": "P383146",
+    "cor": "Preto Prata",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": "#2A2A2E",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/P383146PRETO.png",
+    "foto": "fotos/p383146-preto-prata.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2339-cobre",
+    "ref": "PE2339",
+    "cor": "Cobre",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#B06E3F",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/29,90 - 39,90/PE2339 COBRE.jpeg",
+    "foto": "fotos/pe2339-cobre.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2339-off-white",
+    "ref": "PE2339",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/29,90 - 39,90/PE2339 OFF WHITE.jpeg",
+    "foto": "fotos/pe2339-off-white.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2339-ouro-ligth",
+    "ref": "PE2339",
+    "cor": "Ouro Ligth",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/29,90 - 39,90/PE2339 OURO LIGHT.jpeg",
+    "foto": "fotos/pe2339-ouro-ligth.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2353-rosado",
+    "ref": "PE2353",
+    "cor": "Rosado",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#D8A39A",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/29,90 - 45,90/PE2353 ROSADO.jpg",
+    "foto": "fotos/pe2353-rosado.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2447-croco-caramelo",
+    "ref": "PE2447",
+    "cor": "Croco Caramelo",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#A9682F",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 39,90/PE2447 CARAMELO .jpeg",
+    "foto": "fotos/pe2447-croco-caramelo.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2447-cromo-off-white",
+    "ref": "PE2447",
+    "cor": "Cromo Off White",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": null,
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 39,90/PE2447 OFF WHITE.jpeg",
+    "foto": "fotos/pe2447-cromo-off-white.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2460-trufa-ouro-fosco",
+    "ref": "PE2460",
+    "cor": "Trufa Ouro Fosco",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#6E5742",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 45,90/PE2460 TRUFA.png",
+    "foto": "fotos/pe2460-trufa-ouro-fosco.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2460-ambar-ouro-fosco",
+    "ref": "PE2460",
+    "cor": "Ambar Ouro Fosco",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 45,90/PE2460 AMBAR.jpg",
+    "foto": "fotos/pe2460-ambar-ouro-fosco.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2463-ambar-bronze",
+    "ref": "PE2463",
+    "cor": "Ambar Bronze",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 45,90/PE2463-001-D1.jpg",
+    "foto": "fotos/pe2463-ambar-bronze.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto",
+      "fundo bagunçado"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2465-preto",
+    "ref": "PE2465",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 45,90/PE2465 PRETO.png",
+    "foto": "fotos/pe2465-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2465-caramelo",
+    "ref": "PE2465",
+    "cor": "Caramelo",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#A9682F",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 45,90/PE2465 CARAMELO.png",
+    "foto": "fotos/pe2465-caramelo.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2471-trufa",
+    "ref": "PE2471",
+    "cor": "Trufa",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#6E5742",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 45,90/PE2471 TRUFA.jpg",
+    "foto": "fotos/pe2471-trufa.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2471-croco-caramelo",
+    "ref": "PE2471",
+    "cor": "Croco Caramelo",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#A9682F",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 45,90/PE2471 AMBAR CROCO.png",
+    "foto": "fotos/pe2471-croco-caramelo.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2471-ambar",
+    "ref": "PE2471",
+    "cor": "Ambar",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 45,90/PE2471 AMBAR.png",
+    "foto": "fotos/pe2471-ambar.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2472-ambar-ouro-fosco",
+    "ref": "PE2472",
+    "cor": "Ambar Ouro Fosco",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 45,90/PE2472 AMBAR.jpg",
+    "foto": "fotos/pe2472-ambar-ouro-fosco.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2472-trufa-ouro-fosco",
+    "ref": "PE2472",
+    "cor": "Trufa Ouro Fosco",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#6E5742",
+    "estacao": "Verão 2026",
+    "arquivo": "1 - RASTEIRAS/29,90 - 45,90/PE2472 TRUFA.png",
+    "foto": "fotos/pe2472-trufa-ouro-fosco.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2473-ambar",
+    "ref": "PE2473",
+    "cor": "Ambar",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2026",
+    "arquivo": "",
+    "foto": "fotos/_placeholder.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "sem foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2473-trufa",
+    "ref": "PE2473",
+    "cor": "Trufa",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#6E5742",
+    "estacao": "Verão 2026",
+    "arquivo": "",
+    "foto": "fotos/_placeholder.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "sem foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "pe2475-ambar-ouro-fosco",
+    "ref": "PE2475",
+    "cor": "Ambar Ouro Fosco",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 39.9,
+    "precoMax": 39.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/29,90 - 39,90/PE2475 AMBAR .jpg",
+    "foto": "fotos/pe2475-ambar-ouro-fosco.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "r271814-ouro-ligth",
+    "ref": "R271814",
+    "cor": "Ouro Ligth",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/R271814PRATA.png",
+    "foto": "fotos/r271814-ouro-ligth.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "r271814-prata",
+    "ref": "R271814",
+    "cor": "Prata",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#BFC1C2",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/R271814PRATA.png",
+    "foto": "fotos/r271814-prata.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "r271814-preto",
+    "ref": "R271814",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/39,90 - 49,90/R271814PRETO.png",
+    "foto": "fotos/r271814-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "r521777-preto",
+    "ref": "R521777",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 45.9,
+    "precoMax": 45.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/35,90 - 45,90/R521777PRETO.jpg",
+    "foto": "fotos/r521777-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "t261762-capuccino",
+    "ref": "T261762",
+    "cor": "Capuccino",
+    "nome": "",
+    "categoria": "Rasteiras",
+    "precoMin": 55.9,
+    "precoMax": 55.9,
+    "corHex": null,
+    "estacao": "Verão 2025",
+    "arquivo": "1 - RASTEIRAS/45,90 - 55,90/T261762 CAPUCCINO.jpeg",
+    "foto": "fotos/t261762-capuccino.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10109278-preto",
+    "ref": "10109278",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/99,90 - 115,90/10109278PRETO.png",
+    "foto": "fotos/10109278-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10319419-capuccino",
+    "ref": "10319419",
+    "cor": "Capuccino",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": null,
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/115,90 - 129,90/10319419CAPUCCINO.png",
+    "foto": "fotos/10319419-capuccino.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10419469-capuccino",
+    "ref": "10419469",
+    "cor": "Capuccino",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 169.9,
+    "precoMax": 169.9,
+    "corHex": null,
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/149,90 - 169,90/10419469CAPUCCINO.png",
+    "foto": "fotos/10419469-capuccino.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10429450-new-whisky",
+    "ref": "10429450",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 149.9,
+    "precoMax": 149.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/135,90 - 149,90/10429450NEWWHISKY.jpg",
+    "foto": "fotos/10429450-new-whisky.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10429450-porcelana",
+    "ref": "10429450",
+    "cor": "Porcelana",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 149.9,
+    "precoMax": 149.9,
+    "corHex": "#E7E2D6",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/135,90 - 149,90/10429450PORCELANA.jpg",
+    "foto": "fotos/10429450-porcelana.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10519451-capuccino",
+    "ref": "10519451",
+    "cor": "Capuccino",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 139.9,
+    "precoMax": 139.9,
+    "corHex": null,
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/125,90 - 139,90/10519451CAPUCCINO.png",
+    "foto": "fotos/10519451-capuccino.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10519451-rocha",
+    "ref": "10519451",
+    "cor": "Rocha",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 139.9,
+    "precoMax": 139.9,
+    "corHex": "#8A8378",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/125,90 - 139,90/10519451ROCHA.png",
+    "foto": "fotos/10519451-rocha.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10569484-champagne",
+    "ref": "10569484",
+    "cor": "Champagne",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": null,
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/115,90 - 129,90/10569484CHAMPAGNE.png",
+    "foto": "fotos/10569484-champagne.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10569484-terra",
+    "ref": "10569484",
+    "cor": "Terra",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/115,90 - 129,90/10569484TERRA.png",
+    "foto": "fotos/10569484-terra.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "15824286-preto",
+    "ref": "15824286",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/99,90 - 115,90/15824286PRETO.png",
+    "foto": "fotos/15824286-preto.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "foto borrada"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17173364-preto",
+    "ref": "17173364",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/99,90 - 115,90/17173364 PRETO (3).jpeg",
+    "foto": "fotos/17173364-preto.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "foto borrada",
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17173364-off-white",
+    "ref": "17173364",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/99,90 - 115,90/17173364 OFF WHITE (1).jpeg",
+    "foto": "fotos/17173364-off-white.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "foto borrada",
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17173364-caramelo",
+    "ref": "17173364",
+    "cor": "Caramelo",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#A9682F",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/99,90 - 115,90/17173364 CARAMELO (2).jpeg",
+    "foto": "fotos/17173364-caramelo.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "foto borrada",
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17725441-bistro",
+    "ref": "17725441",
+    "cor": "Bistro",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": null,
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/99,90 - 115,90/17725441BISTRO1.jpg",
+    "foto": "fotos/17725441-bistro.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "fundo bagunçado"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17725441-champagne",
+    "ref": "17725441",
+    "cor": "Champagne",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": null,
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/99,90 - 115,90/17725441CHAMPAGNE.jpg",
+    "foto": "fotos/17725441-champagne.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17725441-new-whisky",
+    "ref": "17725441",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/99,90 - 115,90/17725441NEWWHISKY.jpg",
+    "foto": "fotos/17725441-new-whisky.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19225670-preto",
+    "ref": "19225670",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/115,90 - 129,90/19225670PRETO.png",
+    "foto": "fotos/19225670-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19225670-new-whisky",
+    "ref": "19225670",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Inverno 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/115,90 - 129,90/19225670PRETO.png",
+    "foto": "fotos/19225670-new-whisky.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19625705-champagne",
+    "ref": "19625705",
+    "cor": "Champagne",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 155.9,
+    "precoMax": 155.9,
+    "corHex": null,
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/129,90 - 145,90/19625705CHAMPAGNE.jpg",
+    "foto": "fotos/19625705-champagne.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19625705-off-white",
+    "ref": "19625705",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 145.9,
+    "precoMax": 145.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/129,90 - 145,90/19625705 OFF WHITE.png",
+    "foto": "fotos/19625705-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19625705-new-whisky",
+    "ref": "19625705",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 145.9,
+    "precoMax": 145.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/129,90 - 145,90/19625705 OFF WHITE.png",
+    "foto": "fotos/19625705-new-whisky.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19625705-preto",
+    "ref": "19625705",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 145.9,
+    "precoMax": 145.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/129,90 - 145,90/19625705PRETO.png",
+    "foto": "fotos/19625705-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19625706-preto",
+    "ref": "19625706",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 139.9,
+    "precoMax": 139.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/125,90 - 139,90/19625706 PRETO.png",
+    "foto": "fotos/19625706-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19625706-new-whisky",
+    "ref": "19625706",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 139.9,
+    "precoMax": 139.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/125,90 - 139,90/19625706 NEW WHISKY.png",
+    "foto": "fotos/19625706-new-whisky.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19625706-off-white",
+    "ref": "19625706",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 139.9,
+    "precoMax": 139.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/125,90 - 139,90/19625706 OFFWHITE.png",
+    "foto": "fotos/19625706-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "20211782-malbeck",
+    "ref": "20211782",
+    "cor": "Malbeck",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 89.9,
+    "precoMax": 89.9,
+    "corHex": null,
+    "estacao": "Verão 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/79,90 - 89,90/20211782MALBECK.png",
+    "foto": "fotos/20211782-malbeck.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "33223361-off-white",
+    "ref": "33223361",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/115,90 - 129,90/33223361 OFF WHITE.jpeg",
+    "foto": "fotos/33223361-off-white.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "foto borrada"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "33223361-new-whisky",
+    "ref": "33223361",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/115,90 - 129,90/33223361 NEW WHISKY.jpeg",
+    "foto": "fotos/33223361-new-whisky.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "foto borrada"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "33223361-preto",
+    "ref": "33223361",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/115,90 - 129,90/33223361 PRETO.jpeg",
+    "foto": "fotos/33223361-preto.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "3333222-preto",
+    "ref": "3333222",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 135.9,
+    "precoMax": 135.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/119,90 - 135,90/3333222PRETO.jpg",
+    "foto": "fotos/3333222-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "3333222-ouro",
+    "ref": "3333222",
+    "cor": "Ouro",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 135.9,
+    "precoMax": 135.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/119,90 - 135,90/3333222OURO.jpg",
+    "foto": "fotos/3333222-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "3333222-off-white",
+    "ref": "3333222",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 135.9,
+    "precoMax": 135.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/119,90 - 135,90/3333222OFFWHITE.jpg",
+    "foto": "fotos/3333222-off-white.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "fundo bagunçado"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "53024281-verde-coral-wisky-ambar",
+    "ref": "53024281",
+    "cor": "Verde Coral Wisky Ambar",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#4F6B43",
+    "estacao": "Verão 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/115,90 - 129,90/53024281AMBAR1.jpg",
+    "foto": "fotos/53024281-verde-coral-wisky-ambar.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "53132893-met-onix-metal-niquel",
+    "ref": "53132893",
+    "cor": "Met Onix Metal Niquel",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 105.9,
+    "precoMax": 105.9,
+    "corHex": "#2B2B2E",
+    "estacao": "Inverno 2024",
+    "arquivo": "6 - SANDALIAS DE SALTO/89,90 - 105,90/53132893ONIX.jpg",
+    "foto": "fotos/53132893-met-onix-metal-niquel.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "8869095c-off-white-salto-cromado",
+    "ref": "8869095C",
+    "cor": "Off White Salto Cromado",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": null,
+    "estacao": "Verão 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/99,90 - 115,90/8869095C BRANCO.jpeg",
+    "foto": "fotos/8869095c-off-white-salto-cromado.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto",
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "8899095c-branco-salto-cromado",
+    "ref": "8899095C",
+    "cor": "Branco Salto Cromado",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#F4F1EA",
+    "estacao": "Verão 2025",
+    "arquivo": "",
+    "foto": "fotos/_placeholder.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "sem foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "9233355-rocha",
+    "ref": "9233355",
+    "cor": "Rocha",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 155.9,
+    "precoMax": 155.9,
+    "corHex": "#8A8378",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/139,90 - 155,90/9233355ROCHA.png",
+    "foto": "fotos/9233355-rocha.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "9233355-off-white",
+    "ref": "9233355",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 155.9,
+    "precoMax": 155.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/139,90 - 155,90/9233355OFFWHITE.png",
+    "foto": "fotos/9233355-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "95722986-off-white",
+    "ref": "95722986",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/115,90 - 129,90/95722986OFFWHITE.png",
+    "foto": "fotos/95722986-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "95722986-preto",
+    "ref": "95722986",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/115,90 - 129,90/95722986PRETO.png",
+    "foto": "fotos/95722986-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "95723144-off-white",
+    "ref": "95723144",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/99,90 - 115,90/95723144OFFWHITE.jpg",
+    "foto": "fotos/95723144-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "95723144-preto",
+    "ref": "95723144",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/99,90 - 115,90/95723144PRETO.png",
+    "foto": "fotos/95723144-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "95723200-preto",
+    "ref": "95723200",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 125.9,
+    "precoMax": 125.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/109,90 - 125,90/95723200PRETO.jpg",
+    "foto": "fotos/95723200-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "95723200-off-white",
+    "ref": "95723200",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 125.9,
+    "precoMax": 125.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Inverno 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/109,90 - 125,90/95723200OFFWHITE.png",
+    "foto": "fotos/95723200-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "95723200-terra",
+    "ref": "95723200",
+    "cor": "Terra",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 125.9,
+    "precoMax": 125.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Inverno 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/109,90 - 125,90/95723200TERRA1.jpg",
+    "foto": "fotos/95723200-terra.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "l681024-terra-ouro",
+    "ref": "L681024",
+    "cor": "Terra Ouro",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 59.9,
+    "precoMax": 59.9,
+    "corHex": "#8A5A3B",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/49,90 - 59,90/L681024TERRA.png",
+    "foto": "fotos/l681024-terra-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "l681024-ouro-light-ouro",
+    "ref": "L681024",
+    "cor": "Ouro Light Ouro",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 59.9,
+    "precoMax": 59.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/49,90 - 59,90/L681024OURO.jpg",
+    "foto": "fotos/l681024-ouro-light-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "m4087-ouro-ligth",
+    "ref": "M4087",
+    "cor": "Ouro Ligth",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 125.9,
+    "precoMax": 125.9,
+    "corHex": "#C9A227",
+    "estacao": "Inverno 2025",
+    "arquivo": "6 - SANDALIAS DE SALTO/109,90 - 125,90/M4087OUROLIGTH.jpg",
+    "foto": "fotos/m4087-ouro-ligth.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "n683131-ouro-ouro",
+    "ref": "N683131",
+    "cor": "Ouro Ouro",
+    "nome": "",
+    "categoria": "Sandálias de Salto",
+    "precoMin": 59.9,
+    "precoMax": 59.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2026",
+    "arquivo": "6 - SANDALIAS DE SALTO/49,90 - 59,90/N683131 OURO.jpeg",
+    "foto": "fotos/n683131-ouro-ouro.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "baixa resolução"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "21093521-ferrari",
+    "ref": "21093521",
+    "cor": "Ferrari",
+    "nome": "",
+    "categoria": "Sapatilhas",
+    "precoMin": 79.9,
+    "precoMax": 79.9,
+    "corHex": null,
+    "estacao": "Verão 2025",
+    "arquivo": "3 - SAPATILHAS/69,90 - 79,90/21093521FERRARI.png",
+    "foto": "fotos/21093521-ferrari.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "21094011-army",
+    "ref": "21094011",
+    "cor": "Army",
+    "nome": "",
+    "categoria": "Sapatilhas",
+    "precoMin": 70.9,
+    "precoMax": 70.9,
+    "corHex": "#5C5A36",
+    "estacao": "Inverno 2025",
+    "arquivo": "3 - SAPATILHAS/69,90 - 79,90/21094011ARMY.jpg",
+    "foto": "fotos/21094011-army.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10639609-capuccino",
+    "ref": "10639609",
+    "cor": "Capuccino",
+    "nome": "",
+    "categoria": "Scarpins",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": null,
+    "estacao": "Inverno 2026",
+    "arquivo": "7 - SCARPINS/115,90 - 129,90/10639609 CAPUCCINO.jpg",
+    "foto": "fotos/10639609-capuccino.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10699440-ambar",
+    "ref": "10699440",
+    "cor": "Ambar",
+    "nome": "",
+    "categoria": "Scarpins",
+    "precoMin": 120.9,
+    "precoMax": 120.9,
+    "corHex": "#C8852B",
+    "estacao": "Inverno 2026",
+    "arquivo": "7 - SCARPINS/104,90 - 120,90/10699440 AMBAR.jpg",
+    "foto": "fotos/10699440-ambar.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "foto horizontal"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "10719842-cafe",
+    "ref": "10719842",
+    "cor": "Cafe",
+    "nome": "",
+    "categoria": "Scarpins",
+    "precoMin": 125.9,
+    "precoMax": 125.9,
+    "corHex": "#5A3B22",
+    "estacao": "Inverno 2026",
+    "arquivo": "7 - SCARPINS/109,90 - 125,90/10719842 CAFÉ.jpg",
+    "foto": "fotos/10719842-cafe.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "foto horizontal"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "9968778-vz-red-metal-niquel",
+    "ref": "9968778",
+    "cor": "Vz Red Metal Niquel",
+    "nome": "",
+    "categoria": "Scarpins",
+    "precoMin": 99.9,
+    "precoMax": 99.9,
+    "corHex": "#A02118",
+    "estacao": "Inverno 2024",
+    "arquivo": "7 - SCARPINS/89,90 - 99,90/9968778RED.png",
+    "foto": "fotos/9968778-vz-red-metal-niquel.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "15353359-preto",
+    "ref": "15353359",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 135.9,
+    "precoMax": 135.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/125,90 - 135,90/15353359PRETO2.jpg",
+    "foto": "fotos/15353359-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "15353359-off-white",
+    "ref": "15353359",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 135.9,
+    "precoMax": 135.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/125,90 - 135,90/15353359OFFWHITE.jpg",
+    "foto": "fotos/15353359-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "15353359-champagne",
+    "ref": "15353359",
+    "cor": "Champagne",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 135.9,
+    "precoMax": 135.9,
+    "corHex": null,
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/125,90 - 135,90/15353359PRETO2.jpg",
+    "foto": "fotos/15353359-champagne.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "15525546-new-whisky",
+    "ref": "15525546",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/15525546OFFWHITE.png",
+    "foto": "fotos/15525546-new-whisky.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "15525546-off-white",
+    "ref": "15525546",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/15525546OFFWHITE.png",
+    "foto": "fotos/15525546-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "15825459-off-white",
+    "ref": "15825459",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 119.9,
+    "precoMax": 119.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "",
+    "foto": "fotos/_placeholder.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "sem foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17173293-off-white-ouro",
+    "ref": "17173293",
+    "cor": "Off White Ouro",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2025",
+    "arquivo": "5 - TAMANCOS/99,90 - 115,90/17173293OFFWHITE.jpg",
+    "foto": "fotos/17173293-off-white-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17173293-preto-niquel",
+    "ref": "17173293",
+    "cor": "Preto Niquel",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "5 - TAMANCOS/99,90 - 115,90/17173293PRETO.jpg",
+    "foto": "fotos/17173293-preto-niquel.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17173965-off-white",
+    "ref": "17173965",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2025",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/17173965OFFWHITE.png",
+    "foto": "fotos/17173965-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17725443-ambar",
+    "ref": "17725443",
+    "cor": "Ambar",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#C8852B",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/99,90 - 115,90/17725443AMBAR.jpg",
+    "foto": "fotos/17725443-ambar.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17725443-bistro",
+    "ref": "17725443",
+    "cor": "Bistro",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": null,
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/99,90 - 115,90/17725443BISTRO.jpg",
+    "foto": "fotos/17725443-bistro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "17725443-preto",
+    "ref": "17725443",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/99,90 - 115,90/17725443PRETO.jpg",
+    "foto": "fotos/17725443-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "18625622-capuccino",
+    "ref": "18625622",
+    "cor": "Capuccino",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": null,
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/18625622CAPUCCINO.png",
+    "foto": "fotos/18625622-capuccino.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "18625622-rocha",
+    "ref": "18625622",
+    "cor": "Rocha",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#8A8378",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/18625622ROCHA.jpg",
+    "foto": "fotos/18625622-rocha.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19225671-off-white",
+    "ref": "19225671",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Inverno 2025",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/19225671OFFWHITE.png",
+    "foto": "fotos/19225671-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19225671-preto",
+    "ref": "19225671",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Inverno 2025",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/19225671PRETO.png",
+    "foto": "fotos/19225671-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "19225671-new-whisky",
+    "ref": "19225671",
+    "cor": "New Whisky",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Inverno 2025",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/19225671OFFWHITE.png",
+    "foto": "fotos/19225671-new-whisky.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "4126-preto-ouro",
+    "ref": "4126",
+    "cor": "Preto Ouro",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/99,90 - 115,90/4126PRETO.jpg",
+    "foto": "fotos/4126-preto-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "4126-new-whisky-ouro",
+    "ref": "4126",
+    "cor": "New Whisky Ouro",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#9A5B2E",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/99,90 - 115,90/4126NEWWHISKY3.jpg",
+    "foto": "fotos/4126-new-whisky-ouro.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "4126-rocha-ouro",
+    "ref": "4126",
+    "cor": "Rocha Ouro",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 115.9,
+    "precoMax": 115.9,
+    "corHex": "#8A8378",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/99,90 - 115,90/4126ROCHA3.jpg",
+    "foto": "fotos/4126-rocha-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "95723118-preto",
+    "ref": "95723118",
+    "cor": "Preto",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/95723118PRETO.jpg",
+    "foto": "fotos/95723118-preto.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "95723118-ouro-light",
+    "ref": "95723118",
+    "cor": "Ouro Light",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#D9C27A",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/95723118OFFEOUROLIGTH.jpg",
+    "foto": "fotos/95723118-ouro-light.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "95723118-off-white",
+    "ref": "95723118",
+    "cor": "Off White",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#EFEAE0",
+    "estacao": "Verão 2026",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/95723118OFFWHITE.jpg",
+    "foto": "fotos/95723118-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "95723201-ouro",
+    "ref": "95723201",
+    "cor": "Ouro",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 129.9,
+    "precoMax": 129.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2025",
+    "arquivo": "5 - TAMANCOS/119,90 - 129,90/95723201OURO.jpg",
+    "foto": "fotos/95723201-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "i656159-onca-ouro",
+    "ref": "I656159",
+    "cor": "Onça Ouro",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2025",
+    "arquivo": "5 - TAMANCOS/39,90 - 49,90/I656159 ONCA.jpg",
+    "foto": "fotos/i656159-onca-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "i656159-preto-ouro",
+    "ref": "I656159",
+    "cor": "Preto Ouro",
+    "nome": "",
+    "categoria": "Tamancos",
+    "precoMin": 49.9,
+    "precoMax": 49.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "5 - TAMANCOS/39,90 - 49,90/I656159 PRETO.png",
+    "foto": "fotos/i656159-preto-ouro.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "11924919-ouro",
+    "ref": "11924919",
+    "cor": "Ouro",
+    "nome": "",
+    "categoria": "Tênis",
+    "precoMin": 135.9,
+    "precoMax": 135.9,
+    "corHex": "#C9A227",
+    "estacao": "Inverno 2025",
+    "arquivo": "8 - TENIS/119,90 - 135,90/11924919 COURO  (1).jpg",
+    "foto": "fotos/11924919-ouro.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "11924919-leopardo",
+    "ref": "11924919",
+    "cor": "Leopardo",
+    "nome": "",
+    "categoria": "Tênis",
+    "precoMin": 135.9,
+    "precoMax": 135.9,
+    "corHex": null,
+    "estacao": "Inverno 2025",
+    "arquivo": "8 - TENIS/119,90 - 135,90/11924919 COURO  (1).jpg",
+    "foto": "fotos/11924919-leopardo.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "140009-rosa-marfim-off-white",
+    "ref": "140009",
+    "cor": "Rosa Marfim Off White",
+    "nome": "",
+    "categoria": "Tênis",
+    "precoMin": 79.9,
+    "precoMax": 79.9,
+    "corHex": null,
+    "estacao": "Verão 2025",
+    "arquivo": "8 - TENIS/69,90 - 79,90/140009ROSA.png",
+    "foto": "fotos/140009-rosa-marfim-off-white.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "16404-magenta-preto-netuno",
+    "ref": "16404",
+    "cor": "Magenta Preto Netuno",
+    "nome": "",
+    "categoria": "Tênis",
+    "precoMin": 75.9,
+    "precoMax": 75.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2025",
+    "arquivo": "8 - TENIS/65,90 - 75,90/16404MAGENTA.png",
+    "foto": "fotos/16404-magenta-preto-netuno.webp",
+    "flagFoto": false,
+    "motivosFoto": [],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "2822317-branco-nude-malbec",
+    "ref": "2822317",
+    "cor": "Branco Nude Malbec",
+    "nome": "",
+    "categoria": "Tênis",
+    "precoMin": 135.9,
+    "precoMax": 135.9,
+    "corHex": "#F4F1EA",
+    "estacao": "Inverno 2025",
+    "arquivo": "8 - TENIS/119,90 - 135,90/2822317 COURO.jpg",
+    "foto": "fotos/2822317-branco-nude-malbec.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "rd901-preto-branco",
+    "ref": "RD901",
+    "cor": "Preto Branco",
+    "nome": "",
+    "categoria": "Tênis",
+    "precoMin": 79.9,
+    "precoMax": 79.9,
+    "corHex": "#1A1A1A",
+    "estacao": "Verão 2026",
+    "arquivo": "8 - TENIS/69,90 - 79,90/RD901BRANCOPRETO.jpg",
+    "foto": "fotos/rd901-preto-branco.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "ry913-branco-prata",
+    "ref": "RY913",
+    "cor": "Branco Prata",
+    "nome": "",
+    "categoria": "Tênis",
+    "precoMin": 75.9,
+    "precoMax": 75.9,
+    "corHex": "#F4F1EA",
+    "estacao": "Verão 2026",
+    "arquivo": "8 - TENIS/65,90 - 75,90/RY913BRANCOPRETO.jpg",
+    "foto": "fotos/ry913-branco-prata.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto",
+      "foto horizontal"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "ry916-off-white-ouro-light",
+    "ref": "RY916",
+    "cor": "Off White Ouro Light",
+    "nome": "",
+    "categoria": "Tênis",
+    "precoMin": 75.9,
+    "precoMax": 75.9,
+    "corHex": "#C9A227",
+    "estacao": "Verão 2026",
+    "arquivo": "8 - TENIS/65,90 - 75,90/RY916OFFWHITEMARSALA.jpg",
+    "foto": "fotos/ry916-off-white-ouro-light.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto",
+      "fundo bagunçado"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "ry916-off-white-marsala",
+    "ref": "RY916",
+    "cor": "Off White Marsala",
+    "nome": "",
+    "categoria": "Tênis",
+    "precoMin": 75.9,
+    "precoMax": 75.9,
+    "corHex": "#7B3B3B",
+    "estacao": "Verão 2026",
+    "arquivo": "8 - TENIS/65,90 - 75,90/RY916OFFWHITEMARSALA.jpg",
+    "foto": "fotos/ry916-off-white-marsala.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto",
+      "fundo bagunçado"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "vm9107-branco-prata",
+    "ref": "VM9107",
+    "cor": "Branco Prata",
+    "nome": "",
+    "categoria": "Tênis",
+    "precoMin": 89.9,
+    "precoMax": 89.9,
+    "corHex": "#F4F1EA",
+    "estacao": "Verão 2026",
+    "arquivo": "8 - TENIS/79,90 - 89,90/VM9107BRANCOPRATA.jpg",
+    "foto": "fotos/vm9107-branco-prata.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  },
+  {
+    "id": "vm9108-preto-prata",
+    "ref": "VM9108",
+    "cor": "Preto Prata",
+    "nome": "",
+    "categoria": "Tênis",
+    "precoMin": 69.9,
+    "precoMax": 69.9,
+    "corHex": "#2A2A2E",
+    "estacao": "Verão 2026",
+    "arquivo": "8 - TENIS/79,90 - 89,90/VM9108PRETOPRATA.png",
+    "foto": "fotos/vm9108-preto-prata.webp",
+    "flagFoto": true,
+    "motivosFoto": [
+      "cor não confere com a foto"
+    ],
+    "flagDescricao": true,
+    "ficha": {
+      "material": "",
+      "saltoTipo": "Sem salto",
+      "saltoAltura": ""
+    }
+  }
+]

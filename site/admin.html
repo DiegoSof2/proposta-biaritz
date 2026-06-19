@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biaritz — Painel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="adm">
+  <header class="adm-hdr">
+    <div class="brand">BIARITZ <span>· painel</span></div>
+    <div class="adm-hdr-actions">
+      <span class="dirty" id="dirty" hidden>● <b id="dirtyCount">0</b> edições não salvas</span>
+      <span class="adm-auth" id="auth"></span>
+      <button class="adm-btn ghost" id="btnNovo" type="button">+ Novo produto</button>
+      <button class="adm-btn ghost" id="btnFotos" type="button" disabled>Baixar fotos <b id="fotoCount">0</b></button>
+      <button class="adm-btn ghost" id="btnZip" type="button">Baixar tudo (.zip)</button>
+      <button class="adm-btn ghost" id="btnJson" type="button">Baixar products.json</button>
+      <button class="adm-btn" id="btnPublicar" type="button" hidden>Publicar no site</button>
+    </div>
+  </header>
+
+  <div class="adm-restore" id="restore" hidden>
+    Há um rascunho não publicado deste navegador.
+    <button class="lnk" id="btnRestaurar" type="button">Restaurar</button> ·
+    <button class="lnk" id="btnDescartar" type="button">Descartar</button>
+  </div>
+
+  <div class="adm-progress" id="progress">
+    <div class="bar"><span id="progBar"></span></div>
+    <div class="progtxt" id="progTxt">0 de 0 revisados</div>
+  </div>
+
+  <div class="adm-toolbar">
+    <input type="search" id="search" class="adm-search" placeholder="Buscar por referência, cor ou categoria…" autocomplete="off">
+    <div class="adm-filters" id="filters"></div>
+    <button class="adm-btn ghost" id="btnSelecao" type="button">Seleção em lote</button>
+  </div>
+
+  <div class="adm-bulk" id="bulk" hidden>
+    <span class="bulk-count"><b id="bulkCount">0</b> selecionados</span>
+    <select id="bulkCampo">
+      <option value="">Aplicar campo…</option>
+      <option value="material">Material</option>
+      <option value="saltoTipo">Tipo de salto</option>
+      <option value="estacao">Estação</option>
+      <option value="categoria">Categoria</option>
+      <option value="ativo">Ativo</option>
+    </select>
+    <input type="text" id="bulkValor" class="bulk-valor" placeholder="valor" maxlength="40">
+    <button class="adm-btn" id="bulkAplicar" type="button">Aplicar</button>
+    <button class="adm-btn ghost" id="bulkLimpar" type="button">Limpar seleção</button>
+  </div>
+
+  <main class="adm-layout">
+    <aside class="adm-list" id="list" aria-label="Lista de produtos"></aside>
+    <section class="adm-editor" id="editor">
+      <div class="adm-empty" id="empty">Selecione um produto à esquerda para editar.</div>
+    </section>
+  </main>
+
+  <div class="adm-help">
+    Como publicar: <b>Baixar tudo (.zip)</b> (ou JSON + fotos separados) → colocar
+    <code>products.json</code> em <code>site/</code> e os <code>.webp</code> em
+    <code>site/fotos/</code> → <code>git commit &amp;&amp; git push</code> (Cloudflare publica sozinho).
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

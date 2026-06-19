@@ -1,5 +1,25 @@
 name = "biaritz"
-compatibility_date = "2024-01-01"
+main = "worker/index.js"
+compatibility_date = "2024-09-23"
 
+# Static assets servidos antes do Worker; /auth/* e /api/* caem no Worker.
+# directory = "site" -> raiz do domínio = pasta site/ (igual ao Pages: / = catálogo).
 [assets]
-directory = "."
+directory = "site"
+binding = "ASSETS"
+# Worker roda ANTES dos assets nestes paths -> trava de login na página admin.
+run_worker_first = ["/admin", "/admin.html"]
+
+[vars]
+GITHUB_OWNER = "DiegoSof2"
+GITHUB_REPO = "proposta-biaritz"
+GITHUB_BRANCH = "master"
+# Client ID do Google é público (vai pro browser no fluxo OAuth).
+GOOGLE_CLIENT_ID = "491126298282-89ud62627mh8njcp71j0lrusqv8b55pr.apps.googleusercontent.com"
+# Lista separada por vírgula. Só estes e-mails Google podem publicar.
+ALLOWED_EMAILS = "diego.aguiar1580@gmail.com"
+
+# Secrets (NÃO ficam aqui — usar `wrangler secret put NOME`):
+#   GITHUB_TOKEN          fine-grained, repo proposta-biaritz, Contents: Read/Write
+#   GOOGLE_CLIENT_SECRET  do OAuth client
+#   COOKIE_SECRET         string aleatória longa (ex: openssl rand -hex 32)

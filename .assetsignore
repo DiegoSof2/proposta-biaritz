@@ -1,0 +1,7 @@
+OneDrive_1_*
+*.xls
+*.xlsx
+worker
+wrangler.toml
+.assetsignore
+SETUP-cloudflare.md
