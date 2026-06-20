@@ -18,7 +18,11 @@
       "material": "",
       "saltoTipo": "Anabela",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10429370-ambar.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10429370-off-white",
@@ -39,7 +43,11 @@
       "material": "",
       "saltoTipo": "Anabela",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10429370-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "33223303-ouro",
@@ -62,7 +70,11 @@
       "material": "",
       "saltoTipo": "Anabela",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/33223303-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "33223303-caramelo",
@@ -85,7 +97,11 @@
       "material": "",
       "saltoTipo": "Anabela",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/33223303-caramelo.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "33223303-off-white",
@@ -103,12 +119,16 @@
     "motivosFoto": [
       "cor não confere com a foto"
     ],
-    "flagDescricao": true,
+    "flagDescricao": false,
     "ficha": {
-      "material": "",
+      "material": "Sintético",
       "saltoTipo": "Anabela",
-      "saltoAltura": ""
-    }
+      "saltoAltura": "2cm"
+    },
+    "fotos": [
+      "fotos/33223303-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "6923534-preto",
@@ -131,7 +151,11 @@
       "material": "",
       "saltoTipo": "Anabela",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/6923534-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "451885-off-white",
@@ -152,7 +176,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/451885-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "451945-ambar-caramelo",
@@ -173,7 +201,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/451945-ambar-caramelo.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "451945-preto",
@@ -196,7 +228,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/451945-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "q898180-preto-ouro",
@@ -217,7 +253,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/q898180-preto-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "t898169-preto-ouro",
@@ -238,7 +278,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/t898169-preto-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "y898164-preto-prata",
@@ -259,7 +303,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/y898164-preto-prata.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "1100-bordo-metalizado",
@@ -280,7 +328,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/1100-bordo-metalizado.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "1915-couro-preto",
@@ -301,7 +353,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/1915-couro-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19925681-preto",
@@ -322,7 +378,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19925681-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19925681-rocha",
@@ -343,7 +403,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19925681-rocha.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19925681-new-whisky",
@@ -364,7 +428,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19925681-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19925682-preto",
@@ -385,7 +453,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19925682-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19925682-rocha",
@@ -406,7 +478,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19925682-rocha.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19925682-new-whisky",
@@ -429,7 +505,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19925682-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "20125853-rocha",
@@ -450,7 +530,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/20125853-rocha.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "20125853-new-whisky",
@@ -473,7 +557,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/20125853-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "20125853-preto",
@@ -494,7 +582,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/20125853-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "20125944-preto",
@@ -515,7 +607,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/20125944-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "20125944-nogueira",
@@ -536,7 +632,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/20125944-nogueira.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "21625809-preto",
@@ -557,7 +657,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/21625809-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "21625809-new-whisky",
@@ -578,7 +682,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/21625809-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "21625809-rocha",
@@ -599,7 +707,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/21625809-rocha.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "21725916-new-whisky",
@@ -620,7 +732,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/21725916-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "21725916-preto",
@@ -641,7 +757,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/21725916-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "21725916-rocha",
@@ -662,7 +782,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/21725916-rocha.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "22826044-new-whisky",
@@ -683,7 +807,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/22826044-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "22826044-preto",
@@ -704,7 +832,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/22826044-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "22826044-rocha",
@@ -725,7 +857,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/22826044-rocha.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "22826045-preto",
@@ -746,7 +882,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/22826045-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "22826045-new-whisky",
@@ -767,7 +907,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/22826045-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "22826045-rocha",
@@ -788,7 +932,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/22826045-rocha.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "2401-cafe",
@@ -809,7 +957,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/2401-cafe.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "2402-trufa",
@@ -830,7 +982,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/2402-trufa.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "2402-caramelo",
@@ -853,7 +1009,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/2402-caramelo.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "2402-preto",
@@ -876,7 +1036,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/2402-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "411073-preto",
@@ -897,7 +1061,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/411073-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "434343-camurca-cedro",
@@ -918,7 +1086,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/434343-camurca-cedro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "7981a-preto",
@@ -939,7 +1111,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/7981a-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "ch5008-verde",
@@ -960,7 +1136,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/ch5008-verde.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "ch5008-mostarda",
@@ -981,7 +1161,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/ch5008-mostarda.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "dv26-whisky",
@@ -1002,7 +1186,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/dv26-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "dv26-off-white",
@@ -1023,7 +1211,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/dv26-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "kc2144-preto",
@@ -1044,7 +1236,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/kc2144-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "kc2144-carvalho",
@@ -1065,7 +1261,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/kc2144-carvalho.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "kc2276-preto",
@@ -1086,7 +1286,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/kc2276-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "kc2276-amendoa",
@@ -1107,7 +1311,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/kc2276-amendoa.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "kc2276-carvalho",
@@ -1128,7 +1336,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/kc2276-carvalho.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "kc2278-carvalho",
@@ -1149,7 +1361,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/kc2278-carvalho.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "zx2421-off-white-ouro-fosco",
@@ -1172,7 +1388,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/zx2421-off-white-ouro-fosco.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "35332897-rosado",
@@ -1195,7 +1415,9 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [],
+    "ativo": true
   },
   {
     "id": "281996-ambar",
@@ -1216,7 +1438,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/281996-ambar.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "281996-off-white",
@@ -1237,7 +1463,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/281996-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "532001-off-white",
@@ -1260,7 +1490,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/532001-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "564079-off-white-prata",
@@ -1283,7 +1517,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/564079-off-white-prata.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "791967-trufa",
@@ -1304,7 +1542,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/791967-trufa.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "791967-preto",
@@ -1325,7 +1567,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/791967-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "791967-ambar",
@@ -1346,7 +1592,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/791967-ambar.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "791968-trufa",
@@ -1367,7 +1617,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/791968-trufa.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "791968-ambar",
@@ -1388,7 +1642,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/791968-ambar.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "791968-preto",
@@ -1409,7 +1667,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/791968-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "951890-off-white",
@@ -1430,7 +1692,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/951890-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "951942-trufa",
@@ -1451,7 +1717,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/951942-trufa.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "951942-preto",
@@ -1472,7 +1742,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/951942-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "ff2272-prata-velho",
@@ -1495,7 +1769,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/ff2272-prata-velho.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "ff2272-off-white",
@@ -1518,7 +1796,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/ff2272-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "ff2272-cobre",
@@ -1541,7 +1823,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/ff2272-cobre.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "i383110-preto-ouro",
@@ -1562,7 +1848,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/i383110-preto-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "i383110-terra-ouro",
@@ -1583,7 +1873,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/i383110-terra-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "i383112-jaguatirica-ouro",
@@ -1604,7 +1898,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/i383112-jaguatirica-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "i383148-terra-ouro",
@@ -1625,7 +1923,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/i383148-terra-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "i383148-preto-prata",
@@ -1646,7 +1948,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/i383148-preto-prata.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "j101022-terra-marron-ouro",
@@ -1667,7 +1973,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/j101022-terra-marron-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "j101022-preto-ouro",
@@ -1688,7 +1998,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/j101022-preto-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "j383132-terra-ouro",
@@ -1709,7 +2023,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/j383132-terra-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "j383132-preto-ouro",
@@ -1730,7 +2048,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/j383132-preto-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "k212032-off-white-ouro",
@@ -1751,7 +2073,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/k212032-off-white-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "k212032-terra-ouro",
@@ -1772,7 +2098,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/k212032-terra-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "k212032-exercito-ouro",
@@ -1793,7 +2123,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/k212032-exercito-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "kx2350-ambar",
@@ -1817,7 +2151,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/kx2350-ambar.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "kx2350-off-white",
@@ -1841,7 +2179,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/kx2350-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "kx2356-preto",
@@ -1862,7 +2204,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/kx2356-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "l103138-terra-ouro-fosco",
@@ -1883,7 +2229,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/l103138-terra-ouro-fosco.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "l103138-off-white-ouro-fosco",
@@ -1904,7 +2254,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/l103138-off-white-ouro-fosco.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "l383136-terra-ouro",
@@ -1925,7 +2279,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/l383136-terra-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "l383136-off-white-ouro",
@@ -1946,7 +2304,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/l383136-off-white-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "l383137-jaguatirica-ouro",
@@ -1967,7 +2329,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/l383137-jaguatirica-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "l383137-carvalho-ouro",
@@ -1988,7 +2354,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/l383137-carvalho-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "l383137-terra-ouro",
@@ -2009,7 +2379,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/l383137-terra-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "l383145-preto-ouro-fosco",
@@ -2032,7 +2406,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/l383145-preto-ouro-fosco.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "l383145-carvalho-ouro-fosco",
@@ -2053,7 +2431,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/l383145-carvalho-ouro-fosco.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "lv2118-cobre",
@@ -2076,7 +2458,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/lv2118-cobre.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "m383179-terra-ouro",
@@ -2097,7 +2483,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/m383179-terra-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "m383179-preto-prata",
@@ -2118,7 +2508,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/m383179-preto-prata.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "n212042-preto-multicolor",
@@ -2139,7 +2533,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/n212042-preto-multicolor.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "p212034-carvalho-multicolor",
@@ -2160,7 +2558,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/p212034-carvalho-multicolor.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "p212043-terra-multicolor",
@@ -2181,7 +2583,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/p212043-terra-multicolor.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "p383146-terra-ouro",
@@ -2202,7 +2608,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/p383146-terra-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "p383146-preto-prata",
@@ -2223,7 +2633,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/p383146-preto-prata.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2339-cobre",
@@ -2246,7 +2660,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2339-cobre.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2339-off-white",
@@ -2269,7 +2687,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2339-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2339-ouro-ligth",
@@ -2292,7 +2714,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2339-ouro-ligth.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2353-rosado",
@@ -2313,7 +2739,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2353-rosado.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2447-croco-caramelo",
@@ -2336,7 +2766,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2447-croco-caramelo.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2447-cromo-off-white",
@@ -2359,7 +2793,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2447-cromo-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2460-trufa-ouro-fosco",
@@ -2380,7 +2818,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2460-trufa-ouro-fosco.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2460-ambar-ouro-fosco",
@@ -2401,7 +2843,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2460-ambar-ouro-fosco.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2463-ambar-bronze",
@@ -2425,7 +2871,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2463-ambar-bronze.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2465-preto",
@@ -2446,7 +2896,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2465-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2465-caramelo",
@@ -2467,7 +2921,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2465-caramelo.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2471-trufa",
@@ -2488,7 +2946,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2471-trufa.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2471-croco-caramelo",
@@ -2509,7 +2971,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2471-croco-caramelo.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2471-ambar",
@@ -2530,7 +2996,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2471-ambar.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2472-ambar-ouro-fosco",
@@ -2551,7 +3021,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2472-ambar-ouro-fosco.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2472-trufa-ouro-fosco",
@@ -2572,7 +3046,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2472-trufa-ouro-fosco.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "pe2473-ambar",
@@ -2595,7 +3073,9 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [],
+    "ativo": true
   },
   {
     "id": "pe2473-trufa",
@@ -2618,7 +3098,9 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [],
+    "ativo": true
   },
   {
     "id": "pe2475-ambar-ouro-fosco",
@@ -2639,7 +3121,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/pe2475-ambar-ouro-fosco.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "r271814-ouro-ligth",
@@ -2662,7 +3148,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/r271814-ouro-ligth.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "r271814-prata",
@@ -2683,7 +3173,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/r271814-prata.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "r271814-preto",
@@ -2704,7 +3198,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/r271814-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "r521777-preto",
@@ -2725,7 +3223,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/r521777-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "t261762-capuccino",
@@ -2748,7 +3250,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/t261762-capuccino.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10109278-preto",
@@ -2769,7 +3275,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10109278-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10319419-capuccino",
@@ -2790,7 +3300,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10319419-capuccino.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10419469-capuccino",
@@ -2811,7 +3325,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10419469-capuccino.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10429450-new-whisky",
@@ -2834,7 +3352,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10429450-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10429450-porcelana",
@@ -2855,7 +3377,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10429450-porcelana.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10519451-capuccino",
@@ -2876,7 +3402,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10519451-capuccino.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10519451-rocha",
@@ -2897,7 +3427,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10519451-rocha.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10569484-champagne",
@@ -2918,7 +3452,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10569484-champagne.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10569484-terra",
@@ -2939,7 +3477,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10569484-terra.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "15824286-preto",
@@ -2962,7 +3504,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/15824286-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "17173364-preto",
@@ -2986,7 +3532,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17173364-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "17173364-off-white",
@@ -3010,7 +3560,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17173364-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "17173364-caramelo",
@@ -3034,7 +3588,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17173364-caramelo.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "17725441-bistro",
@@ -3057,7 +3615,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17725441-bistro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "17725441-champagne",
@@ -3078,7 +3640,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17725441-champagne.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "17725441-new-whisky",
@@ -3101,7 +3667,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17725441-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19225670-preto",
@@ -3122,7 +3692,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19225670-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19225670-new-whisky",
@@ -3145,7 +3719,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19225670-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19625705-champagne",
@@ -3166,7 +3744,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19625705-champagne.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19625705-off-white",
@@ -3187,7 +3769,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19625705-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19625705-new-whisky",
@@ -3210,7 +3796,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19625705-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19625705-preto",
@@ -3231,7 +3821,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19625705-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19625706-preto",
@@ -3252,7 +3846,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19625706-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19625706-new-whisky",
@@ -3273,7 +3871,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19625706-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19625706-off-white",
@@ -3294,7 +3896,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19625706-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "20211782-malbeck",
@@ -3315,7 +3921,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/20211782-malbeck.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "33223361-off-white",
@@ -3338,7 +3948,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/33223361-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "33223361-new-whisky",
@@ -3361,7 +3975,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/33223361-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "33223361-preto",
@@ -3384,7 +4002,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/33223361-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "3333222-preto",
@@ -3405,7 +4027,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/3333222-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "3333222-ouro",
@@ -3426,7 +4052,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/3333222-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "3333222-off-white",
@@ -3449,7 +4079,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/3333222-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "53024281-verde-coral-wisky-ambar",
@@ -3470,7 +4104,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/53024281-verde-coral-wisky-ambar.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "53132893-met-onix-metal-niquel",
@@ -3491,7 +4129,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/53132893-met-onix-metal-niquel.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "8869095c-off-white-salto-cromado",
@@ -3515,7 +4157,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/8869095c-off-white-salto-cromado.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "8899095c-branco-salto-cromado",
@@ -3538,7 +4184,9 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [],
+    "ativo": true
   },
   {
     "id": "9233355-rocha",
@@ -3559,7 +4207,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/9233355-rocha.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "9233355-off-white",
@@ -3580,7 +4232,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/9233355-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "95722986-off-white",
@@ -3601,7 +4257,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/95722986-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "95722986-preto",
@@ -3622,7 +4282,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/95722986-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "95723144-off-white",
@@ -3643,7 +4307,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/95723144-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "95723144-preto",
@@ -3664,7 +4332,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/95723144-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "95723200-preto",
@@ -3685,7 +4357,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/95723200-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "95723200-off-white",
@@ -3706,7 +4382,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/95723200-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "95723200-terra",
@@ -3727,7 +4407,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/95723200-terra.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "l681024-terra-ouro",
@@ -3748,7 +4432,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/l681024-terra-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "l681024-ouro-light-ouro",
@@ -3769,7 +4457,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/l681024-ouro-light-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "m4087-ouro-ligth",
@@ -3792,7 +4484,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/m4087-ouro-ligth.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "n683131-ouro-ouro",
@@ -3815,7 +4511,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/n683131-ouro-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "21093521-ferrari",
@@ -3836,7 +4536,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/21093521-ferrari.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "21094011-army",
@@ -3857,7 +4561,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/21094011-army.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10639609-capuccino",
@@ -3878,7 +4586,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10639609-capuccino.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10699440-ambar",
@@ -3901,7 +4613,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10699440-ambar.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "10719842-cafe",
@@ -3924,7 +4640,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/10719842-cafe.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "9968778-vz-red-metal-niquel",
@@ -3945,7 +4665,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/9968778-vz-red-metal-niquel.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "15353359-preto",
@@ -3966,7 +4690,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/15353359-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "15353359-off-white",
@@ -3987,7 +4715,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/15353359-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "15353359-champagne",
@@ -4010,7 +4742,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/15353359-champagne.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "15525546-new-whisky",
@@ -4033,7 +4769,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/15525546-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "15525546-off-white",
@@ -4054,7 +4794,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/15525546-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "15825459-off-white",
@@ -4077,7 +4821,9 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [],
+    "ativo": true
   },
   {
     "id": "17173293-off-white-ouro",
@@ -4098,7 +4844,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17173293-off-white-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "17173293-preto-niquel",
@@ -4119,7 +4869,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17173293-preto-niquel.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "17173965-off-white",
@@ -4140,7 +4894,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17173965-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "17725443-ambar",
@@ -4161,7 +4919,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17725443-ambar.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "17725443-bistro",
@@ -4182,7 +4944,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17725443-bistro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "17725443-preto",
@@ -4203,7 +4969,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/17725443-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "18625622-capuccino",
@@ -4224,7 +4994,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/18625622-capuccino.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "18625622-rocha",
@@ -4245,7 +5019,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/18625622-rocha.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19225671-off-white",
@@ -4266,7 +5044,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19225671-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19225671-preto",
@@ -4287,7 +5069,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19225671-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "19225671-new-whisky",
@@ -4310,7 +5096,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/19225671-new-whisky.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "4126-preto-ouro",
@@ -4331,7 +5121,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/4126-preto-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "4126-new-whisky-ouro",
@@ -4354,7 +5148,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/4126-new-whisky-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "4126-rocha-ouro",
@@ -4375,7 +5173,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/4126-rocha-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "95723118-preto",
@@ -4396,7 +5198,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/95723118-preto.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "95723118-ouro-light",
@@ -4419,7 +5225,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/95723118-ouro-light.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "95723118-off-white",
@@ -4440,7 +5250,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/95723118-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "95723201-ouro",
@@ -4461,7 +5275,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/95723201-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "i656159-onca-ouro",
@@ -4482,7 +5300,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/i656159-onca-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "i656159-preto-ouro",
@@ -4503,7 +5325,11 @@
       "material": "",
       "saltoTipo": "",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/i656159-preto-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "11924919-ouro",
@@ -4526,7 +5352,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/11924919-ouro.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "11924919-leopardo",
@@ -4549,7 +5379,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/11924919-leopardo.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "140009-rosa-marfim-off-white",
@@ -4570,7 +5404,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/140009-rosa-marfim-off-white.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "16404-magenta-preto-netuno",
@@ -4591,7 +5429,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/16404-magenta-preto-netuno.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "2822317-branco-nude-malbec",
@@ -4614,7 +5456,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/2822317-branco-nude-malbec.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "rd901-preto-branco",
@@ -4637,7 +5483,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/rd901-preto-branco.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "ry913-branco-prata",
@@ -4661,7 +5511,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/ry913-branco-prata.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "ry916-off-white-ouro-light",
@@ -4685,7 +5539,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/ry916-off-white-ouro-light.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "ry916-off-white-marsala",
@@ -4709,7 +5567,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/ry916-off-white-marsala.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "vm9107-branco-prata",
@@ -4732,7 +5594,11 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/vm9107-branco-prata.webp"
+    ],
+    "ativo": true
   },
   {
     "id": "vm9108-preto-prata",
@@ -4755,6 +5621,10 @@
       "material": "",
       "saltoTipo": "Sem salto",
       "saltoAltura": ""
-    }
+    },
+    "fotos": [
+      "fotos/vm9108-preto-prata.webp"
+    ],
+    "ativo": true
   }
 ]

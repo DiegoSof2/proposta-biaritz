@@ -488,7 +488,7 @@ async function publicar() {
     const fotos = [];
     for (const [caminho, blob] of fotosNovas) {
       const buf = new Uint8Array(await blob.arrayBuffer());
-      fotos.push({ path: "site/" + caminho, base64: bytesToBase64(buf) });
+      fotos.push({ path: caminho, base64: bytesToBase64(buf) });
     }
     const r = await fetch("/api/publish", {
       method: "POST",
@@ -503,7 +503,7 @@ async function publicar() {
     fotosNovas.clear(); blobURL.clear(); atualizaFotoBtn();
     zeraDirty();
     if (selId) renderEditor();
-    alert(`Publicado! Commit ${j.commit.slice(0, 7)}${j.fotos ? ` · ${j.fotos} foto(s)` : ""}.\nDeploy do Cloudflare em ~1–2 min.`);
+    alert(`Tudo certo! Suas alterações foram salvas${j.fotos ? ` (${j.fotos} foto${j.fotos > 1 ? "s" : ""})` : ""}.\nO site é atualizado em 1 a 2 minutos.`);
   } catch (e) {
     alert("Falha ao publicar: " + (e && e.message || e));
   } finally {

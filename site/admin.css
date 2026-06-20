@@ -8,10 +8,8 @@
   background: var(--white); border-bottom: 1px solid var(--line);
   position: sticky; top: 0; z-index: 20;
 }
-.adm-hdr .brand {
-  font-family: var(--display); font-size: 20px; font-weight: 500;
-  letter-spacing: 0.16em; color: var(--ink);
-}
+.adm-hdr .brand { display: inline-flex; align-items: center; gap: 8px; }
+.adm-hdr .brand img { height: 22px; width: auto; display: block; }
 .adm-hdr .brand span { font-family: var(--label); font-size: 11px; letter-spacing: .08em;
   text-transform: uppercase; color: var(--muted); }
 .adm-hdr-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }

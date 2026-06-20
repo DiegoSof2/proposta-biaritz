@@ -139,12 +139,12 @@ async function initCatalogo() {
       elGrid.innerHTML = `<div class="grid-vazio">Nenhum produto encontrado para “${busca}”.</div>`;
       return;
     }
-    elGrid.innerHTML = lista.map((p) => `
+    elGrid.innerHTML = lista.map((p, i) => `
       <a class="card" href="produto.html?id=${encodeURIComponent(p.id)}">
         <div class="photo">
           <span class="badge green">Pronta entrega</span>
           ${DEBUG && (p.flagFoto || p.flagDescricao) ? `<span class="badge flag" title="${[...(p.flagFoto ? p.motivosFoto : []), ...(p.flagDescricao ? ['descrição a preencher'] : [])].join(' · ')}">⚑ revisar</span>` : ""}
-          <img src="${p.foto}" alt="${p.ref} ${p.cor}" loading="lazy">
+          <img src="${p.foto}" alt="${p.ref} ${p.cor}" width="320" height="400" ${i < 4 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"'}>
         </div>
         <div class="body">
           <div class="ref">Ref. ${p.ref}</div>
@@ -197,7 +197,7 @@ async function initProduto() {
         <div class="main">
           <span class="badge green">Pronta entrega</span>
           ${DEBUG && p.flagFoto ? `<span class="badge flag">⚑ foto: ${p.motivosFoto.join(' · ')}</span>` : ""}
-          <img src="${fotos[fotoAtiva]}" alt="${p.ref} ${p.cor}">
+          <img src="${fotos[fotoAtiva]}" alt="${p.ref} ${p.cor}" width="480" height="600" fetchpriority="high">
         </div>
         ${fotos.length > 1 ? `<div class="thumbs">${fotos.map((f, i) =>
           `<div class="thumb ${i === fotoAtiva ? "active" : ""}" data-foto="${i}"><img src="${f}" alt=""></div>`).join("")}</div>` : ""}

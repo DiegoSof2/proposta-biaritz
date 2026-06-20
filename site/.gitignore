@@ -14,3 +14,7 @@ mockup-mobile.png
 
 # sistema
 .DS_Store
+
+# local
+.claude/
+.wrangler/

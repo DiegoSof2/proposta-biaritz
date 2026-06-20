@@ -1,0 +1,19 @@
+# não servir como site estático:
+worker
+wrangler.toml
+.assetsignore
+.gitignore
+.git
+.claude
+SETUP-cloudflare.md
+# ferramentas/mockups de trabalho (caso existam localmente)
+scripts
+yolov8n.pt
+yolo.json
+fotos-analise.json
+revisao-fotos.txt
+desktop.png
+mobile.png
+mockup-desktop.png
+mockup-mobile.png
+biaritz-home-wireframe.svg

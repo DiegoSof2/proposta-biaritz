@@ -6,13 +6,16 @@
   <title>Biaritz — Produto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="products.json" as="fetch">
+  <link rel="preload" href="app.js" as="script">
   <style> body { background: var(--white); } </style>
 </head>
 <body data-page="produto">
   <header class="hdr">
-    <div class="brand">BIARITZ</div>
+    <a class="brand" href="index.html"><img src="logo.png" alt="BIARITZ" width="82" height="24" fetchpriority="high"></a>
     <nav>
       <a class="off" aria-disabled="true">Coleção</a>
       <a class="active" href="index.html">Catálogo</a>

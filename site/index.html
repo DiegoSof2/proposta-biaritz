@@ -6,12 +6,15 @@
   <title>Biaritz — Catálogo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="products.json" as="fetch">
+  <link rel="preload" href="app.js" as="script">
 </head>
 <body data-page="catalogo">
   <header class="hdr">
-    <div class="brand">BIARITZ</div>
+    <a class="brand" href="index.html"><img src="logo.png" alt="BIARITZ" width="82" height="24" fetchpriority="high"></a>
     <nav>
       <a class="off" aria-disabled="true">Coleção</a>
       <a class="active" href="index.html">Catálogo</a>
@@ -25,6 +28,11 @@
     </button>
   </header>
 
+  <div class="cat-intro">
+    <h1>Catálogo para Consulta e Orçamento</h1>
+    <p>Preços e disponibilidade sujeitos a confirmação.</p>
+  </div>
+
   <div class="search-wrap">
     <svg class="search-ico" width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M14 14l4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
     <input type="search" id="search" class="search" placeholder="Buscar por modelo, referência ou cor…" autocomplete="off">
@@ -35,7 +43,7 @@
     <button class="filters-arrow" id="filtersArrow" type="button" aria-label="Ver mais categorias"></button>
   </div>
   <main class="grid" id="grid"></main>
-  <div class="aviso">🗔 Grade fechada · a partir de 6 pares · mesmo modelo e cor · pedido mínimo 12 pares</div>
+  <div class="aviso">🗔 Grade fechada · mesmo modelo e cor · pedido mínimo 6 pares</div>
 
   <script src="app.js"></script>
 </body>

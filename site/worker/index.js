@@ -119,7 +119,8 @@ function authLogout() {
 
 function emailPermitido(email, env) {
   const lista = (env.ALLOWED_EMAILS || "").toLowerCase().split(/[,\s]+/).filter(Boolean);
-  return lista.includes(email);
+  // entrada "@dominio.com" libera o domínio inteiro; senão exige e-mail exato.
+  return lista.some((e) => e.startsWith("@") ? email.endsWith(e) : email === e);
 }
 
 /* ---------------- publish ---------------- */
