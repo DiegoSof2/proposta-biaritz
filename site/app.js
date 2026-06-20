@@ -40,7 +40,9 @@ const catSingular = (p) => SINGULAR[p.categoria] || p.categoria;
 // nome = categoria singular + cor (planilha não tem nome próprio); adm pode sobrescrever p.nome
 const tituloProduto = (p) => p.nome || `${catSingular(p)} ${p.cor}`;
 const nomeProduto = (p) => p.nome || `${catSingular(p)} ${p.cor} (ref. ${p.ref})`;
-const avista = (v) => v * 0.93;          // 7% de desconto à vista
+// desconto progressivo à vista por valor do pedido: 5% base, 7% >=5mil, 10% >=8mil
+const descontoPct = (v) => v >= 8000 ? 10 : v >= 5000 ? 7 : 5;
+const avista = (v) => v * (1 - descontoPct(v) / 100);
 const precoCheio = (p) => p.precoMax;    // preço da planilha (com NF)
 // Preço único por par (igual em todas as grades) = preço cheio.
 const precoGrade = (p, gKey) => precoCheio(p);
@@ -80,7 +82,7 @@ function waLink(cart, fone) {
     txt += `   ${g.nome} x${it.qtd} (${g.pares * it.qtd} pares) · ${brl(it.precoPar)}/par = ${brl(sub)}%0A`;
   });
   txt += `%0A*Total:* ${t.pares} pares · ${brl(t.total)}`;
-  txt += `%0A*À vista (-7%):* ${brl(avista(t.total))}`;
+  txt += `%0A*À vista (-${descontoPct(t.total)}%):* ${brl(avista(t.total))}`;
   txt = txt.replace(/ /g, "%20");
   return `https://wa.me/${fone}?text=${txt}`;
 }
@@ -149,7 +151,7 @@ async function initCatalogo() {
           <div class="name">${tituloProduto(p)}</div>
           <div class="price">
             <div class="price-main"><b>${brl(precoCheio(p))}</b><small>/par</small></div>
-            <div class="price-avista">${brl(avista(precoCheio(p)))} à vista (-7%)</div>
+            <div class="price-avista">5–10% à vista conforme o pedido</div>
           </div>
         </div>
       </a>`).join("");
@@ -252,14 +254,14 @@ async function initProduto() {
             <span class="k">Total selecionado</span>
             <span class="v">${t.pares > 0 ? brl(t.total) : "—"}</span>
           </div>
-          <div class="total-avista"${t.pares > 0 ? "" : " style=\"visibility:hidden\""}>${brl(avista(t.pares > 0 ? t.total : 0))} à vista (-7%)</div>
-          <div class="pares">${t.pares} pares no total${t.pares > 0 && t.pares < 12 ? " · pedido mínimo 12 pares (2 grades)" : ""}</div>
+          <div class="total-avista"${t.pares > 0 ? "" : " style=\"visibility:hidden\""}>${brl(avista(t.pares > 0 ? t.total : 0))} à vista (-${descontoPct(t.total)}%)</div>
+          <div class="pares">${t.pares} pares no total${t.pares > 0 && t.pares < 6 ? " · pedido mínimo 6 pares (1 grade)" : ""}</div>
           <button class="btn-add" id="addBtn">Adicionar ao carrinho</button>
           <div class="add-aviso" id="addAviso" hidden>Selecione ao menos uma grade antes de adicionar.</div>
         </div>
 
         <div class="facts">
-          <div class="fact">💸 Até 7% de desconto à vista</div>
+          <div class="fact">💸 Até 10% de desconto à vista</div>
           <div class="fact">🚚 Frete Grátis acima de R$5 mil</div>
           <div class="fact">💳 6x sem juros no cartão</div>
           <div class="fact">👥 Atendemos apenas CNPJ</div>
@@ -298,6 +300,7 @@ async function initProduto() {
         nome: nomeProduto(p), grade: k, qtd: sel[k], precoPar: precoGrade(p, k) });
     }
     setCart(cart);
+    flyToCart(el.querySelector("#addBtn"));
     for (const k in sel) sel[k] = 0;
     render();
     openPedido();
@@ -323,7 +326,7 @@ async function initProduto() {
           <div class="name">${tituloProduto(s)}</div>
           <div class="price">
             <div class="price-main"><b>${brl(precoCheio(s))}</b><small>/par</small></div>
-            <div class="price-avista">${brl(avista(precoCheio(s)))} à vista (-7%)</div>
+            <div class="price-avista">5–10% à vista conforme o pedido</div>
           </div>
         </div>
       </a>`).join("");
@@ -332,6 +335,40 @@ async function initProduto() {
 
   render();
   renderSugestoes();
+}
+
+/* ---------- animação "voar pro carrinho" ---------- */
+function flyToCart(srcEl) {
+  const btn = document.getElementById("btnPedido");
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!srcEl || !btn || reduce) { bumpCart(); return; }
+  const a = srcEl.getBoundingClientRect();
+  const b = btn.getBoundingClientRect();
+  const fly = srcEl.cloneNode(true);
+  fly.removeAttribute("id");
+  fly.className = "fly-cart " + fly.className;
+  Object.assign(fly.style, {
+    left: a.left + "px", top: a.top + "px",
+    width: a.width + "px", height: a.height + "px",
+  });
+  document.body.appendChild(fly);
+  const dx = (b.left + b.width / 2) - (a.left + a.width / 2);
+  const dy = (b.top + b.height / 2) - (a.top + a.height / 2);
+  // força reflow antes de aplicar o destino p/ garantir a transição
+  void fly.offsetWidth;
+  requestAnimationFrame(() => {
+    fly.style.transform = `translate(${dx}px, ${dy}px) scale(.1)`;
+    fly.style.opacity = ".25";
+  });
+  let ended = false;
+  const finish = () => { if (ended) return; ended = true; fly.remove(); bumpCart(); };
+  fly.addEventListener("transitionend", finish, { once: true });
+  setTimeout(finish, 900); // fallback se transitionend não disparar
+}
+function bumpCart() {
+  const btn = document.getElementById("btnPedido");
+  if (!btn) return;
+  btn.classList.remove("cart-bump"); void btn.offsetWidth; btn.classList.add("cart-bump");
 }
 
 /* ---------- carrinho-drawer "Meu pedido" (compartilhado) ---------- */
@@ -386,15 +423,23 @@ function renderPedido() {
     </div>`;
   }).join("");
 
-  const META_FRETE = 5000;
-  const falta = Math.max(0, META_FRETE - t.total);
-  const pct = Math.min(100, (t.total / META_FRETE) * 100);
+  const META_FRETE = 5000, META_DESC = 8000;
+  const pct = Math.min(100, (t.total / META_DESC) * 100);
+  const dPct = descontoPct(t.total);
+  let bmsg;
+  if (t.total < META_FRETE) bmsg = `Você tem <b>${dPct}%</b> à vista · faltam <b>${brl(META_FRETE - t.total)}</b> p/ <b>frete grátis + 7%</b> 🚚`;
+  else if (t.total < META_DESC) bmsg = `Frete grátis ✓ · faltam <b>${brl(META_DESC - t.total)}</b> p/ <b>10% de desconto</b> 🏷️`;
+  else bmsg = `🎉 Frete grátis ✓ · <b>10% de desconto</b> (máximo)`;
+  const r1 = t.total >= META_FRETE, r2 = t.total >= META_DESC;
   const freteHtml = cart.length ? `
     <div class="frete">
-      <div class="frete-msg">${falta > 0
-        ? `Faltam <b>${brl(falta)}</b> para <b>frete grátis</b> 🚚`
-        : `🎉 <b>Frete grátis liberado!</b>`}</div>
-      <div class="frete-bar"><span style="width:${pct}%"></span></div>
+      <div class="frete-msg">${bmsg}</div>
+      <div class="frete-bar${r2 ? " full" : ""}">
+        <span style="width:0%"></span>
+        <i class="fmark ${r1 ? "hit" : ""}" style="left:62.5%"></i>
+        <i class="fmark ${r2 ? "hit" : ""}" style="left:100%"></i>
+      </div>
+      <div class="frete-ticks"><span style="left:62.5%">frete + 7%</span><span style="left:100%">10%</span></div>
     </div>` : "";
 
   dr.innerHTML = `
@@ -405,13 +450,19 @@ function renderPedido() {
     <div class="ped-list">${cart.length ? linhas : '<div class="ped-vazio">Seu pedido está vazio.</div>'}</div>
     ${freteHtml}
     <div class="ped-foot">
-      <div class="ped-tot"><span>Total de grades</span><b>${t.grades}</b></div>
-      <div class="ped-tot"><span>Total de pares</span><b>${t.pares}</b></div>
+      <div class="ped-mini">
+        <div class="pm-cell"><span>Grades</span><b>${t.grades}</b></div>
+        <div class="pm-cell"><span>Pares</span><b>${t.pares}</b></div>
+      </div>
       <div class="ped-tot ped-valor"><span>Total</span><b>${brl(t.total)}</b></div>
-      ${t.total > 0 ? `<div class="ped-tot ped-avista"><span>À vista (-7%)</span><b>${brl(avista(t.total))}</b></div>` : ""}
+      ${t.total > 0 ? `<div class="ped-tot ped-avista"><span>À vista (-${descontoPct(t.total)}%)</span><b>${brl(avista(t.total))}</b></div>` : ""}
+      <div class="ped-aviso">Pedido sujeito à confirmação.</div>
       <button class="btn-continuar" id="pedContinuar">Continuar comprando</button>
       ${botoesVendedor(cart)}
     </div>`;
+
+  const barFill = dr.querySelector(".frete-bar span");
+  if (barFill) requestAnimationFrame(() => { barFill.style.width = pct + "%"; });
 
   dr.querySelector("#pedClose").addEventListener("click", closePedido);
   dr.querySelector("#pedContinuar").addEventListener("click", () => {

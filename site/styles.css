@@ -37,10 +37,8 @@ img { display: block; }
   height: 80px; padding-inline: var(--pad);
   background: var(--white); border-bottom: 1px solid var(--line);
 }
-.hdr .brand {
-  font-family: var(--display); font-size: 22px; font-weight: 500;
-  letter-spacing: 0.18em; color: var(--ink);
-}
+.hdr .brand { display: inline-flex; align-items: center; line-height: 0; }
+.hdr .brand img { height: 24px; width: auto; display: block; }
 .hdr nav { display: flex; gap: 40px; }
 .hdr nav a {
   font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--t1);
@@ -316,17 +314,56 @@ body.ped-open .ped-drawer { transform: translateX(0); }
 .pi-x { background: none; border: none; font-size: 18px; color: var(--muted); cursor: pointer;
   align-self: flex-start; line-height: 1; }
 
-.frete { padding: 14px 24px; background: var(--alt); border-top: 1px solid var(--line); }
-.frete-msg { font-size: 12px; color: var(--t2); margin-bottom: 8px; }
+.frete { padding: 16px 24px; background: var(--alt); border-top: 1px solid var(--line); }
+.frete-msg { font-size: 12px; color: var(--t2); margin-bottom: 10px; }
 .frete-msg b { color: var(--ink); font-weight: 600; }
-.frete-bar { height: 6px; background: var(--line2); overflow: hidden; }
-.frete-bar span { display: block; height: 100%; background: var(--green);
-  transition: width .4s ease; }
+.frete-bar { position: relative; height: 10px; border-radius: 6px;
+  background: var(--line2); box-shadow: inset 0 1px 2px rgba(26,14,6,.12); overflow: hidden; }
+.frete-bar span { display: block; height: 100%; border-radius: 6px; width: 0;
+  background: linear-gradient(90deg, var(--green), #5fb07a);
+  background-size: 200% 100%; transition: width .7s cubic-bezier(.22,1,.36,1);
+  animation: freteShimmer 2.2s linear infinite; }
+.frete-bar.full span { background: linear-gradient(90deg, var(--green), #7bc98f); }
+.frete-bar.full { box-shadow: inset 0 1px 2px rgba(26,14,6,.12), 0 0 0 2px rgba(95,176,122,.28); }
+@keyframes freteShimmer { to { background-position: -200% 0; } }
+.fmark { position: absolute; top: 50%; width: 4px; height: 4px; border-radius: 50%;
+  background: var(--white); transform: translate(-50%, -50%); z-index: 2;
+  box-shadow: 0 0 0 1px var(--line2); transition: .3s; }
+.fmark.hit { width: 9px; height: 9px; background: #fff;
+  box-shadow: 0 0 0 2px var(--green), 0 0 8px rgba(95,176,122,.6);
+  animation: freteHit .45s ease; }
+@keyframes freteHit { 0% { transform: translate(-50%,-50%) scale(.2); }
+  60% { transform: translate(-50%,-50%) scale(1.4); } 100% { transform: translate(-50%,-50%) scale(1); } }
+.frete-ticks { position: relative; height: 14px; margin-top: 6px; font-size: 9px; color: var(--t3); }
+.frete-ticks span { position: absolute; transform: translateX(-100%); white-space: nowrap; letter-spacing: .03em; }
+.frete-ticks span:first-child { transform: translateX(-50%); }
+
+/* voar pro carrinho + bump do badge */
+.fly-cart { position: fixed; z-index: 60; object-fit: cover; pointer-events: none;
+  border-radius: 6px; box-shadow: 0 8px 24px rgba(26,14,6,.3);
+  transition: transform .75s cubic-bezier(.5,-0.3,.5,1), opacity .75s ease; }
+.cart-bump { animation: cartBump .45s ease; }
+@keyframes cartBump { 0%,100% { transform: scale(1); }
+  30% { transform: scale(1.18); } 60% { transform: scale(.94); } }
+@media (prefers-reduced-motion: reduce) {
+  .frete-bar span, .fly-cart, .cart-bump { animation: none; transition: none; }
+}
+
+.cat-intro { padding: 22px var(--pad) 4px; background: var(--white); }
+.cat-intro h1 { font-family: var(--display); font-weight: 500; font-size: 26px; letter-spacing: .02em; color: var(--ink); margin: 0; }
+.cat-intro p { font-size: 12px; color: var(--t3); margin: 4px 0 0; letter-spacing: .03em; }
+.ped-aviso { font-size: 11px; color: var(--t3); text-align: center; margin: 6px 0 2px; letter-spacing: .03em; }
 
 .ped-foot { background: var(--white); border-top: 1px solid var(--line); padding: 18px 24px;
   display: flex; flex-direction: column; gap: 8px; }
 .ped-tot { display: flex; justify-content: space-between; font-size: 13px; color: var(--t2); }
 .ped-tot b { color: var(--ink); }
+.ped-mini { display: flex; gap: 0; border: 1px solid rgba(26,14,6,.08);
+  border-radius: 8px; overflow: hidden; }
+.pm-cell { flex: 1; display: flex; align-items: baseline; justify-content: center; gap: 6px;
+  padding: 8px 6px; font-size: 12px; color: var(--t3); }
+.pm-cell + .pm-cell { border-left: 1px solid rgba(26,14,6,.08); }
+.pm-cell b { color: var(--ink); font-size: 15px; font-weight: 600; }
 .ped-valor { padding-top: 8px; border-top: 1px solid var(--line); font-size: 14px; }
 .ped-valor b { font-family: var(--display); font-size: 20px; }
 .ped-avista { font-size: 12px; color: var(--green); }
@@ -401,4 +438,33 @@ body.ped-open .ped-drawer { transform: translateX(0); }
   .grade { flex-wrap: wrap; gap: 14px; padding-top: 24px; }
   .grade .ginfo { flex-basis: 100%; }
   .grade .gprice-box { flex: 1; text-align: right; min-width: 0; }
+
+  /* Drawer "Meu pedido" compacto no mobile */
+  .ped-head { padding: 14px 16px; }
+  .ped-title { font-size: 18px; }
+  .ped-mod { font-size: 10px; }
+  .ped-close { font-size: 22px; }
+  .ped-list { padding: 6px 14px; }
+  .ped-item { padding: 10px 4px; gap: 10px; }
+  .ped-item img { width: 44px; height: 56px; }
+  .pi-name { font-size: 12px; }
+  .pi-sub { font-size: 9px; margin: 1px 0 6px; }
+  .pi-qty button { width: 24px; height: 24px; font-size: 14px; }
+  .pi-pares { font-size: 9px; }
+  .frete-msg { font-size: 11px; margin-bottom: 8px; }
+  .ped-foot { padding: 10px 16px; gap: 4px; }
+  /* mini-tabela grades/pares compacta + libera tela */
+  .pm-cell { padding: 6px; font-size: 11px; }
+  .pm-cell b { font-size: 14px; }
+  .frete-ticks { display: none; }
+  .ped-aviso { display: none; }
+  .ped-valor { padding-top: 6px; font-size: 13px; }
+  .ped-valor b { font-size: 17px; }
+  .ped-avista { font-size: 11px; }
+  .btn-continuar { margin-top: 5px; padding: 10px; font-size: 10px; }
+  .btn-wa { padding: 10px; font-size: 10px; }
+  .ped-foot .btn-wa { margin-top: 5px; }
+  .ped-foot .btn-wa + .btn-wa { margin-top: 6px; }
+  .frete { padding: 10px 16px; }
+  .frete-bar { height: 8px; }
 }
