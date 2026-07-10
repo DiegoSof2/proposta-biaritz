@@ -49,7 +49,7 @@ document.getElementById("f").addEventListener("submit",async ev=>{
     const km=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
     const key=await crypto.subtle.deriveKey({name:"PBKDF2",salt:b2a(V.s),iterations:300000,hash:"SHA-256"},km,{name:"AES-GCM",length:256},false,["decrypt"]);
     const plain=await crypto.subtle.decrypt({name:"AES-GCM",iv:b2a(V.i)},key,b2a(V.d));
-    document.open();document.write(new TextDecoder().decode(plain));document.close();requestAnimationFrame(()=>{const a=document.getElementById("porque");if(a)a.scrollIntoView();});
+    document.open();document.write(new TextDecoder().decode(plain));document.close();const g=()=>{const a=document.getElementById("porque");if(a)a.scrollIntoView();};requestAnimationFrame(g);window.addEventListener("load",()=>{g();setTimeout(g,600);});
   }catch(err){e.textContent="Senha incorreta. Tente novamente."}
 });
 </script>
