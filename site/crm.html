@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Simulação — CRM Biaritz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ground:#F5F0E8; --white:#FFF; --alt:#FAF7F3; --alt2:#F0ECE4;
+    --ink:#1A0E06; --t1:#3A2A1A; --t2:#5A4A3A; --t3:#7A6A5A; --muted:#9A8A7A;
+    --gold:#C4AE97; --line:#EDE8E0; --line2:#D4C8BB;
+    --green:#2A6A40; --amber:#8A6A20; --red:#B23A2E;
+    --display:"Cormorant Garamond",Georgia,serif;
+    --label:"Jost",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--ground);color:var(--t1);font-family:var(--label);font-size:15px;-webkit-font-smoothing:antialiased}
+  button{font-family:var(--label)}
+
+  /* header — espelha .adm-hdr */
+  .hdr{display:flex;align-items:center;justify-content:space-between;height:64px;padding-inline:24px;background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+  .hdr .brand{display:flex;align-items:baseline;gap:10px}
+  .hdr .brand .logo{font-family:var(--display);font-size:24px;font-weight:600;letter-spacing:.14em;color:var(--ink)}
+  .hdr .brand span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .demo-pill{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);border:1px solid #E8DBB0;background:#FBF4DF;padding:4px 12px;border-radius:100px}
+  .hdr .who{font-size:11px;color:var(--t3);letter-spacing:.03em}
+  .hdr .who b{color:var(--green);font-weight:500}
+
+  /* abas — espelha .adm-tabs */
+  .tabs{display:flex;gap:4px;padding:0 24px;background:var(--white);border-bottom:1px solid var(--line);overflow-x:auto;position:sticky;top:64px;z-index:19}
+  .tab{background:none;border:none;cursor:pointer;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);padding:14px 16px;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
+  .tab:hover{color:var(--t1)}
+  .tab.on{color:var(--ink);border-bottom-color:var(--green)}
+
+  main{max-width:1320px;margin:0 auto;padding:26px 28px 48px}
+  .tela{display:none}.tela.on{display:block}
+
+  .explica{background:var(--alt);border:1px solid var(--line2);border-left:3px solid var(--gold);padding:15px 18px;margin-bottom:22px;font-size:14px;color:var(--t2);line-height:1.55}
+  .explica b{color:var(--ink);font-weight:500}
+
+  h2{font-family:var(--display);font-weight:600;font-size:32px;color:var(--ink);margin:0 0 4px}
+  .sub-h{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+  h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--t3);font-weight:500;margin:0 0 12px}
+
+  .card{background:var(--white);border:1px solid var(--line);padding:18px 20px}
+
+  /* ── KPI cards ── */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:14px}
+  .kpi .lbl{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .kpi .val{font-family:var(--label);font-size:32px;font-weight:600;color:var(--ink);line-height:1.15;margin:6px 0 2px}
+  .kpi .delta{font-size:12px;letter-spacing:.02em}
+  .kpi .delta .up{color:var(--green);font-weight:500}
+  .kpi .delta .down{color:var(--red);font-weight:500}
+  .kpi .delta small{color:var(--muted)}
+  .kpi svg{margin-top:10px;display:block}
+
+  .duo{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:12px}
+  .trio{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px}
+  @media(max-width:900px){.duo,.trio{grid-template-columns:1fr}}
+
+  /* gráfico principal */
+  .chart-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+  .legend{display:flex;gap:16px;font-size:11px;color:var(--t3)}
+  .legend i{display:inline-block;width:10px;height:10px;margin-right:5px;vertical-align:-1px}
+
+  /* leaderboard */
+  .rank{display:flex;flex-direction:column;gap:12px}
+  .rank .row{display:flex;align-items:center;gap:10px}
+  .avatar{width:28px;height:28px;border-radius:100px;background:var(--alt2);color:var(--t2);display:grid;place-items:center;font-size:10px;letter-spacing:.04em;font-weight:600;flex:0 0 auto}
+  .rank .nm{width:64px;font-size:13px}
+  .rank .bar{flex:1;height:8px;background:var(--alt2);border-radius:100px;overflow:hidden}
+  .rank .bar i{display:block;height:100%;background:var(--green)}
+  .rank .vl{font-size:12px;color:var(--t2);width:56px;text-align:right}
+  .meta-bar{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+  .meta-bar .bar{height:8px;background:var(--alt2);border-radius:100px;overflow:hidden;margin-top:8px}
+  .meta-bar .bar i{display:block;height:100%;background:var(--gold)}
+  .meta-bar p{font-size:12px;color:var(--t2)}
+
+  /* verba */
+  .verba{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .verba input{font-family:var(--label);font-size:14px;padding:9px 12px;border:1px solid var(--line2);background:var(--white);color:var(--ink);width:130px}
+  .btn{background:var(--green);color:#fff;border:none;cursor:pointer;padding:9px 14px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+  .btn.ghost{background:transparent;color:var(--t2);border:1px solid var(--line2)}
+  .btn.ghost:hover{border-color:var(--ink);color:var(--ink)}
+  .btn.sm{padding:6px 10px;font-size:10px}
+  .btn.wa{background:#1F7A4D}
+
+  /* atividades recentes */
+  .feed{display:flex;flex-direction:column}
+  .feed .it{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;align-items:baseline}
+  .feed .it:last-child{border-bottom:0}
+  .feed .quando{font-size:11px;color:var(--muted);width:74px;flex:0 0 auto}
+  .feed .oq b{font-weight:500;color:var(--ink)}
+  .feed .oq span{color:var(--t2)}
+
+  /* ── chips / filtros ── */
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  .chip{border:1px solid var(--line2);background:var(--white);color:var(--t2);padding:6px 14px;font-size:11px;letter-spacing:.04em;cursor:pointer;text-transform:uppercase}
+  .chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .srch{width:100%;max-width:420px;padding:11px 14px;border:1px solid var(--line2);background:var(--white);font-family:var(--label);font-size:13px;color:var(--t1);margin-bottom:12px}
+
+  /* tabela */
+  table{width:100%;border-collapse:collapse;font-size:14px;background:var(--white)}
+  th{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;text-align:left}
+  th,td{padding:13px 14px;border-bottom:1px solid var(--line)}
+  tbody tr{cursor:pointer}
+  tbody tr:hover{background:var(--alt)}
+  .tag{display:inline-block;font-size:10px;letter-spacing:.04em;padding:3px 9px;border-radius:100px}
+  .tg-ok{background:#E2EFE5;color:var(--green)}
+  .tg-warn{background:#F3EAD2;color:var(--amber)}
+  .tg-bad{background:#F3E2DE;color:var(--red)}
+  .tg-mut{background:var(--alt2);color:var(--t3)}
+  .tg-gold{background:#F1E9DF;color:#8A6B3A}
+  /* selo de classe do cliente (curva ABC) */
+  .cls{display:inline-flex;align-items:center;gap:4px;font-family:var(--label);font-size:10px;font-weight:600;letter-spacing:.05em;padding:2px 7px;border-radius:2px;text-transform:uppercase;white-space:nowrap;vertical-align:middle}
+  .cls b{font-size:11px;font-weight:700}
+  .cls.cA{background:var(--green);color:#fff}
+  .cls.cB{background:#C4AE97;color:#3A2A1A}
+  .cls.cC{background:var(--alt2);color:var(--t2)}
+  .cls.prov{background:transparent;border:1px dashed}
+  .cls.cA.prov{color:var(--green);border-color:var(--green)}
+  .cls.cB.prov{color:#8A6B3A;border-color:#C4AE97}
+  .cls.cC.prov{color:var(--t2);border-color:var(--line2)}
+  .clsleg{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:11px;color:var(--muted);margin:2px 0 12px}
+
+  /* ── disparos por email ── */
+  .mail label{display:block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 0 5px}
+  .mail input[type="text"],.mail select,.mail textarea{width:100%;font-family:var(--label);font-size:14px;padding:10px 12px;border:1px solid var(--line2);background:var(--white);color:var(--t1);box-sizing:border-box}
+  .mail textarea{resize:vertical;min-height:150px;line-height:1.55}
+  .mail .row2{display:flex;gap:10px}
+  .mail .row2>div{flex:1}
+  .mail .send{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+  .aud .seg{display:flex;align-items:center;justify-content:space-between;padding:11px 12px;border:1px solid var(--line2);background:var(--white);cursor:pointer;margin-bottom:8px}
+  .aud .seg.on{border-color:var(--green);background:rgba(42,106,64,.06)}
+  .aud .seg .nm{font-size:14px;color:var(--t1)}
+  .aud .seg .nm small{display:block;font-size:11px;color:var(--muted);letter-spacing:0;text-transform:none;margin-top:2px}
+  .aud .seg .ct{font-family:var(--label);font-size:18px;font-weight:600;color:var(--ink)}
+  .aud .count{margin-top:14px;padding:12px 14px;background:var(--ink);color:#fff;display:flex;align-items:baseline;gap:8px}
+  .aud .count b{font-family:var(--label);font-size:24px;font-weight:600}
+  .mstat{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+  .mstat .card{padding:16px 18px}
+  .mstat .k{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+  .mstat .v{font-family:var(--label);font-size:26px;font-weight:600;color:var(--ink);margin-top:4px}
+  .mstat .v small{font-size:13px;color:var(--muted);font-weight:400}
+  @media(max-width:720px){.mstat{grid-template-columns:1fr 1fr}.mail .row2{flex-direction:column}}
+  .tplgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}
+  .tpl{border:1px solid var(--line2);background:var(--white);cursor:pointer;overflow:hidden;transition:border-color .12s}
+  .tpl.on{border-color:var(--green);box-shadow:0 0 0 1px var(--green)}
+  .tpl .thumb{height:78px;position:relative;overflow:hidden}
+  .tpl .thumb .bar{height:22px}
+  .tpl .thumb .ln{height:5px;background:var(--line2);margin:7px 12px 0;border-radius:2px}
+  .tpl .thumb .ln.s{width:52%}
+  .tpl .thumb .bt{height:11px;width:44px;margin:8px 12px 0;border-radius:2px}
+  .tpl .cap{font-size:11px;letter-spacing:.03em;color:var(--t1);padding:8px 10px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+  .tpl .cap .on-mk{color:var(--green);font-family:var(--label);font-size:11px;display:none}
+  .tpl.on .cap .on-mk{display:inline}
+  .mprev{border:1px solid var(--line2);background:#fff;max-width:340px;margin:0 auto}
+  .mprev .top{padding:22px 22px 16px;text-align:center;color:#fff}
+  .mprev .top .br{font-family:var(--display);font-size:22px;letter-spacing:.04em}
+  .mprev .bd{padding:18px 22px;color:#2A1E12;font-size:13px;line-height:1.55}
+  .mprev .bd h4{font-family:var(--display);font-size:19px;margin:0 0 8px;color:var(--ink)}
+  .mprev .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin:12px 0 4px}
+  .mprev .grid img{width:100%;aspect-ratio:1;object-fit:cover;background:var(--ground);display:block}
+  .mprev .cta{display:block;text-align:center;background:var(--green);color:#fff;font-family:var(--label);font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:11px;margin:16px 0 6px}
+  .mprev .foot{padding:12px 22px;background:var(--ground);font-size:10px;color:var(--muted);text-align:center;border-top:1px solid var(--line)}
+  @media(max-width:720px){.tplgrid{grid-template-columns:1fr 1fr}}
+
+  /* ── ficha ── */
+  .ficha{display:grid;grid-template-columns:340px 1fr;gap:12px;margin-top:14px;align-items:start}
+  @media(max-width:900px){.ficha{grid-template-columns:1fr}}
+  .ficha h4{font-family:var(--display);font-size:26px;font-weight:600;color:var(--ink);margin:0}
+  .kv dt{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:14px}
+  .kv dd{margin:3px 0 0;font-size:14px;color:var(--t1);line-height:1.5}
+  .ministats{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid var(--line);margin-top:16px;padding-top:14px;gap:8px}
+  .ministats .ms b{font-family:var(--label);font-size:19px;font-weight:600;color:var(--ink);display:block}
+  .ministats .ms span{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+  /* timeline */
+  .tl{position:relative;padding-left:26px}
+  .tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:1px;background:var(--line2)}
+  .tl .ev{position:relative;padding:0 0 18px}
+  .tl .ev::before{content:"";position:absolute;left:-23px;top:4px;width:9px;height:9px;border-radius:100px;background:var(--gold);border:2px solid var(--white)}
+  .tl .ev.pedido::before{background:var(--green)}
+  .tl .ev.alerta::before{background:var(--red)}
+  .tl .ev .tt{font-size:14px;color:var(--ink)}
+  .tl .ev .tt b{font-weight:500}
+  .tl .ev .dt{font-size:11px;color:var(--muted);margin-top:2px}
+
+  /* ── KANBAN ── */
+  .kb{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-items:start}
+  .kb.four{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:980px){.kb,.kb.four{grid-template-columns:1fr;}}
+  .kb-col{background:var(--alt);border:1px solid var(--line);padding:12px}
+  .kb-hd{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px}
+  .kb-hd b{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);font-weight:500}
+  .kb-hd span{font-size:11px;color:var(--muted)}
+  .kb-sum{font-size:12px;color:var(--t3);margin-bottom:12px}
+  .kb-cards{display:flex;flex-direction:column;gap:8px}
+  .kcard{background:var(--white);border:1px solid var(--line);padding:14px 16px;cursor:grab;box-shadow:0 1px 2px rgba(26,14,6,.04)}
+  .kcard:hover{border-color:var(--line2)}
+  .kcard.rot{border-left:3px solid var(--red)}
+  .kcard .top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+  .kcard .cli{font-size:15px;color:var(--ink);font-weight:500}
+  .kcard .val{font-family:var(--label);font-size:16px;font-weight:600;color:var(--ink);margin-top:2px}
+  .kcard .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+  .kcard .meta .dias{font-size:11px;color:var(--muted)}
+  .kcard .meta .dias.late{color:var(--red)}
+  .kcard .tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
+  .kcard .av{width:22px;height:22px;font-size:9px}
+  .kcard .hint{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.45}
+  .kcard .acts{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:100px;flex:0 0 auto;margin-top:5px}
+  .dot.g{background:var(--green)}.dot.a{background:#C99A2E}.dot.r{background:var(--red)}
+  .kb-drop{margin-top:14px;display:flex;gap:10px}
+  .kb-drop span{flex:1;text-align:center;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:10px;border:1px dashed var(--line2);color:var(--muted)}
+  .kb-drop .win{color:var(--green);border-color:#BCD6C4}
+  .kb-drop .lose{color:var(--red);border-color:#E0BDB6}
+
+  /* ── funil ── */
+  .funil{display:flex;flex-direction:column;align-items:center;gap:0;margin-top:6px}
+  .funil .st{width:100%;display:flex;flex-direction:column;align-items:center}
+  .funil .hd{width:100%;display:flex;align-items:baseline;justify-content:space-between;font-size:12px;letter-spacing:.02em;color:var(--t1);margin-bottom:4px}
+  .funil .hd b{font-family:var(--label);font-size:16px;font-weight:600}
+  .funil .bar{height:36px;display:flex;overflow:hidden;background:var(--line2)}
+  .funil .seg{height:100%;position:relative;cursor:default;transition:filter .12s}
+  .funil .seg:hover{filter:brightness(1.08)}
+  .funil .seg[data-tip]:hover::after{content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 6px);transform:translateX(-50%);background:var(--ink);color:#fff;font-size:11px;line-height:1.35;letter-spacing:.01em;padding:6px 9px;white-space:nowrap;z-index:20;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+  .funil .conv{font-size:11px;color:var(--muted);padding:7px 0;display:flex;align-items:center;gap:6px}
+  .funil .conv b{color:var(--t1);font-weight:500}
+  .funleg{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:11px;color:var(--muted)}
+  .funleg span{display:inline-flex;align-items:center;gap:6px}
+  .funleg i{width:11px;height:11px;flex:0 0 auto}
+
+  .barlist .bl{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-size:13px}
+  .barlist .bl .nm{width:82px;color:var(--t2);flex:0 0 auto}
+  .barlist .bl .tr{flex:1;height:26px;background:var(--alt2);position:relative}
+  .barlist .bl .tr i{position:absolute;inset:0 auto 0 0;display:flex;align-items:center;padding:0 8px;color:#fff;font-size:11px;white-space:nowrap}
+  .barlist .bl .vl{width:88px;text-align:right;color:var(--t2);flex:0 0 auto}
+
+  /* ── funil de retenção ── */
+  .retf .top{display:flex;gap:10px;margin:8px 0 16px}
+  .retf .top .t{flex:1;border:1px solid var(--line2);background:var(--white);padding:10px 12px}
+  .retf .top .t .k{font-size:10px;color:var(--muted);letter-spacing:.05em;text-transform:uppercase}
+  .retf .top .t .v{font-family:var(--label);font-size:22px;font-weight:600;line-height:1.1;margin-top:3px}
+  .retf .top .t small{display:block;font-size:11px;color:var(--muted);margin-top:2px}
+  .retf .row{display:grid;grid-template-columns:88px 1fr 96px 78px;align-items:center;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+  .retf .fx{font-size:13px;color:var(--t1)}
+  .retf .fx small{display:block;color:var(--muted);font-size:11px;margin-top:1px}
+  .retf .trk{height:26px;background:var(--alt2);position:relative}
+  .retf .trk i{position:absolute;inset:0 auto 0 0;display:flex;align-items:center;padding:0 9px;color:#fff;font-size:12px;font-family:var(--label);font-weight:600}
+  .retf .money{font-size:13px;text-align:right;color:var(--t1);font-family:var(--label);font-weight:600}
+  .retf .money small{display:block;font-family:var(--body);font-weight:400;color:var(--muted);font-size:10px;letter-spacing:.03em;text-transform:uppercase;margin-top:1px}
+  .retf .stx{justify-self:end;font-size:10px;letter-spacing:.04em;padding:3px 9px;border-radius:100px;text-transform:uppercase;white-space:nowrap}
+  .retf .recu{display:flex;align-items:center;gap:10px;margin-top:14px;padding:11px 13px;background:rgba(42,106,64,.08);border:1px solid rgba(42,106,64,.25)}
+  .retf .recu .big{font-family:var(--label);font-size:20px;font-weight:600;color:var(--green)}
+  .retf .recu .tx{font-size:13px;line-height:1.4}
+  @media(max-width:560px){.retf .top{flex-direction:column}.retf .row{grid-template-columns:76px 1fr 70px;gap:8px}.retf .stx{display:none}}
+
+  /* donut + origem + follow-ups */
+  .donut-wrap{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+  .donut-leg{display:flex;flex-direction:column;gap:8px;font-size:13px}
+  .donut-leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:7px;vertical-align:-1px}
+  .donut-leg b{font-weight:600}
+  .orig{display:flex;flex-direction:column}
+  .orig .or{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .orig .or:last-child{border-bottom:0}
+  .orig .ic{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;flex:0 0 auto}
+  .orig .nm{flex:1;font-size:14px}
+  .orig .nm small{display:block;font-size:11px;color:var(--muted)}
+  .orig .qt{font-size:13px;color:var(--t2);text-align:right}
+  .orig .qt b{display:block;font-size:15px;font-weight:600;color:var(--ink)}
+  .fups{display:flex;flex-direction:column}
+  .fup{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}
+  .fup:last-child{border-bottom:0}
+  .fup .ck{width:18px;height:18px;border:1.5px solid var(--line2);border-radius:100px;flex:0 0 auto;margin-top:1px;cursor:pointer}
+  .fup .ck.done{background:var(--green);border-color:var(--green);position:relative}
+  .fup .ck.done::after{content:"✓";color:#fff;font-size:11px;position:absolute;inset:0;display:grid;place-items:center}
+  .fup .tx{flex:1;font-size:13.5px;line-height:1.4}
+  .fup .tx b{font-weight:500;color:var(--ink)}
+  .fup .tx small{display:block;font-size:11px;color:var(--muted);margin-top:1px}
+  .fup .qd{font-size:11px;flex:0 0 auto;padding:3px 9px;border-radius:100px}
+  .fup .qd.late{background:#F3E2DE;color:var(--red)}
+  .fup .qd.today{background:#F3EAD2;color:var(--amber)}
+  .fup .qd.next{background:var(--alt2);color:var(--t3)}
+  .note{font-size:13px;color:var(--t3);margin-top:12px;line-height:1.5}
+  .sec{margin-top:22px}
+  /* origem com ícone na tabela */
+  .org{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--t2);white-space:nowrap}
+  .org .mi{width:22px;height:22px;border-radius:6px;display:grid;place-items:center;flex:0 0 auto}
+  /* drawer do cartão */
+  .drawer-bg{position:fixed;inset:0;background:rgba(26,14,6,.45);z-index:40;display:none}
+  .drawer-bg.on{display:block}
+  .drawer{position:fixed;top:0;right:-480px;bottom:0;width:460px;max-width:94vw;background:var(--white);border-left:1px solid var(--line2);z-index:41;transition:right .22s ease;overflow-y:auto;padding:24px 26px}
+  .drawer.on{right:0}
+  .drawer .dx{position:absolute;top:14px;right:16px;border:none;background:none;font-size:20px;color:var(--t3);cursor:pointer}
+  .drawer h4{font-family:var(--display);font-size:24px;font-weight:600;color:var(--ink);margin:0 0 2px}
+  .drawer .dsub{font-size:12px;color:var(--muted);margin-bottom:16px}
+  .dblk{border-top:1px solid var(--line);padding:16px 0}
+  .dblk h5{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--t3);font-weight:500;margin:0 0 10px}
+  .dblk textarea{width:100%;font-family:var(--label);font-size:13px;padding:10px 12px;border:1px solid var(--line2);background:var(--white);color:var(--t1);resize:vertical;min-height:64px}
+  .dblk .row2{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .dblk select,.dblk input[type="date"],.dblk input[type="time"]{font-family:var(--label);font-size:13px;padding:8px 10px;border:1px solid var(--line2);background:var(--white);color:var(--t1)}
+  .dmove{display:flex;gap:6px;flex-wrap:wrap}
+  .dmove .btn.ghost.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  footer{max-width:1320px;margin:0 auto;padding:0 24px 30px;color:var(--muted);font-size:11px;letter-spacing:.03em}
+</style>
+</head>
+<body>
+
+<a href="proposta-crm.html" id="backprop" style="position:fixed;bottom:22px;right:22px;z-index:99;display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:#fff;font-family:var(--label);font-size:12px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;padding:15px 26px;box-shadow:0 8px 28px rgba(26,14,6,.35)">← Voltar à proposta</a>
+<header class="hdr">
+  <div class="brand"><img src="data:image/png;base64,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" alt="Biaritz" style="height:22px;display:block"><span>CRM · Painel</span></div>
+  <span class="demo-pill">Simulação · valores de exemplo</span>
+  <span class="who">Sessão: <b>Dono</b> · julho 2026</span>
+</header>
+
+<nav class="tabs" id="nav">
+  <button class="tab on" data-t="t1">Visão geral</button>
+  <button class="tab" data-t="t2">Clientes</button>
+  <button class="tab" data-t="t3">Radar do dia</button>
+  <button class="tab" data-t="t4">Pedidos</button>
+  <button class="tab" data-t="t6">Disparos</button>
+  <button class="tab" data-t="t5">Relatórios</button>
+</nav>
+
+<main>
+
+<!-- ════════ TELA 1 · DASHBOARD ════════ -->
+<section class="tela on" id="t1">
+  <div class="explica"><b>Para quem: o dono. Quando: uma olhada por dia, 10 minutos por semana.</b><br>
+  É a resposta rápida para "como está o negócio agora?". Os seis números vitais mostram o mês em andamento com a tendência dos últimos meses; o gráfico compara o faturamento confirmado com a meta; o quadro de vendedores mostra quem está puxando o resultado; e o bloco de disciplina mostra se a equipe está deixando retornos atrasarem. O único trabalho do dono aqui é digitar o gasto do mês com anúncios — todo o resto se alimenta sozinho dos pedidos e cadastros.</div>
+
+  <h2>Visão geral</h2>
+  <div class="sub-h">Julho 2026 · comparado com junho</div>
+
+  <div class="kpis">
+    <div class="card kpi">
+      <div class="lbl">Positivação</div>
+      <div class="val">34<small style="font-size:16px;color:var(--muted)"> / 91</small></div>
+      <div class="delta"><span class="up">▲ +4</span> <small>vs. junho (30)</small></div>
+      <svg width="100%" height="26" viewBox="0 0 120 26" preserveAspectRatio="none"><polyline points="0,20 20,18 40,21 60,14 80,16 100,10 120,6" fill="none" stroke="#2A6A40" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card kpi">
+      <div class="lbl">Clientes em risco 60d+</div>
+      <div class="val">23</div>
+      <div class="delta"><span class="down">▲ +4</span> <small>entraram na faixa</small></div>
+      <svg width="100%" height="26" viewBox="0 0 120 26" preserveAspectRatio="none"><polyline points="0,12 20,14 40,12 60,16 80,14 100,10 120,8" fill="none" stroke="#B23A2E" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card kpi">
+      <div class="lbl">Faturamento (pago)</div>
+      <div class="val">R$ 118k</div>
+      <div class="delta"><span class="up">▲ 12%</span> <small>vs. R$ 105k</small></div>
+      <svg width="100%" height="26" viewBox="0 0 120 26" preserveAspectRatio="none"><polyline points="0,22 20,19 40,20 60,15 80,17 100,12 120,7" fill="none" stroke="#2A6A40" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card kpi">
+      <div class="lbl">Ticket médio</div>
+      <div class="val">R$ 3.480</div>
+      <div class="delta"><span class="up">▲ 6%</span> <small>vs. R$ 3.280</small></div>
+      <svg width="100%" height="26" viewBox="0 0 120 26" preserveAspectRatio="none"><polyline points="0,16 20,17 40,14 60,15 80,12 100,13 120,9" fill="none" stroke="#2A6A40" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card kpi">
+      <div class="lbl">Novos clientes</div>
+      <div class="val">7</div>
+      <div class="delta"><small>4 anúncio · 2 Instagram · 1 indicação</small></div>
+      <svg width="100%" height="26" viewBox="0 0 120 26" preserveAspectRatio="none"><polyline points="0,18 20,20 40,15 60,17 80,13 100,14 120,10" fill="none" stroke="#C4AE97" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card kpi">
+      <div class="lbl">Retorno do anúncio</div>
+      <div class="val">4,2×</div>
+      <div class="delta"><small>R$ 2.500 → R$ 10.440 · CAC R$ 625</small></div>
+      <svg width="100%" height="26" viewBox="0 0 120 26" preserveAspectRatio="none"><polyline points="0,19 20,16 40,18 60,13 80,15 100,11 120,8" fill="none" stroke="#2A6A40" stroke-width="1.6"/></svg>
+    </div>
+  </div>
+
+  <div class="duo">
+    <div class="card">
+      <div class="chart-head">
+        <h3 style="margin:0">Faturamento confirmado · últimos 6 meses</h3>
+        <div class="legend"><span><i style="background:var(--green)"></i>Pago</span><span><i style="background:var(--alt2);border:1px solid var(--line2)"></i>Meta R$ 120k</span></div>
+      </div>
+      <svg width="100%" viewBox="0 0 560 190" style="height:auto;display:block" role="img" aria-label="Barras de faturamento mensal">
+        <line x1="0" y1="46" x2="560" y2="46" stroke="#D4C8BB" stroke-width="1" stroke-dasharray="4 4"/>
+        <text x="556" y="40" font-size="10" fill="#9A8A7A" text-anchor="end" font-family="Jost">meta</text>
+        <g font-size="11" fill="#7A6A5A" font-family="Jost" text-anchor="middle">
+          <rect x="22"  y="88"  width="52" height="72"  fill="#DFD8CC"/><text x="48"  y="180">fev</text><text x="48"  y="80"  fill="#5A4A3A">86k</text>
+          <rect x="112" y="72"  width="52" height="88"  fill="#DFD8CC"/><text x="138" y="180">mar</text><text x="138" y="64"  fill="#5A4A3A">98k</text>
+          <rect x="202" y="82"  width="52" height="78"  fill="#DFD8CC"/><text x="228" y="180">abr</text><text x="228" y="74"  fill="#5A4A3A">92k</text>
+          <rect x="292" y="76"  width="52" height="84"  fill="#DFD8CC"/><text x="318" y="180">mai</text><text x="318" y="68"  fill="#5A4A3A">95k</text>
+          <rect x="382" y="63"  width="52" height="97"  fill="#DFD8CC"/><text x="408" y="180">jun</text><text x="408" y="55"  fill="#5A4A3A">105k</text>
+          <rect x="472" y="50"  width="52" height="110" fill="#2A6A40"/><text x="498" y="180">jul</text><text x="498" y="42"  fill="#1A0E06" font-weight="600">118k</text>
+        </g>
+      </svg>
+    </div>
+    <div class="card">
+      <h3>Vendas por vendedor · julho</h3>
+      <div class="rank">
+        <div class="row"><span class="avatar">CA</span><span class="nm">Carla</span><span class="bar"><i style="width:100%"></i></span><span class="vl">R$ 46k</span></div>
+        <div class="row"><span class="avatar">JU</span><span class="nm">Júlio</span><span class="bar"><i style="width:85%"></i></span><span class="vl">R$ 39k</span></div>
+        <div class="row"><span class="avatar">RE</span><span class="nm">Renata</span><span class="bar"><i style="width:72%"></i></span><span class="vl">R$ 33k</span></div>
+      </div>
+      <div class="meta-bar">
+        <p>Meta do mês — <b>R$ 118k de R$ 120k</b> (98%)</p>
+        <div class="bar"><i style="width:98%"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="duo" style="grid-template-columns:1fr 2fr">
+    <div class="card">
+      <h3>Verba de anúncios</h3>
+      <div class="verba">
+        <input value="R$ 2.500,00"><button class="btn">Salvar</button>
+      </div>
+      <p class="note">Único número digitado pelo dono. Com ele o painel calcula sozinho o retorno (4,2×) e o custo por cliente novo (R$ 625).</p>
+    </div>
+    <div class="card">
+      <h3>Hoje no CRM</h3>
+      <div class="feed">
+        <div class="it"><span class="quando">10:12</span><span class="oq"><b>Calçados Estrela ME</b> <span>— pedido de R$ 4.980 chegou pelo site (aguardando pagamento)</span></span></div>
+        <div class="it"><span class="quando">09:38</span><span class="oq"><b>Carla</b> <span>— lançou pedido manual de R$ 2.140 · Moda &amp; Passo</span></span></div>
+        <div class="it"><span class="quando">09:15</span><span class="oq"><b>Lojão do Sapato</b> <span>— cadastrou CNPJ e navegou 18 min sem montar pedido</span></span></div>
+        <div class="it"><span class="quando">ontem</span><span class="oq"><b>Sapataria do Vale</b> <span>— entrou na faixa de 90+ dias sem compra</span></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="trio">
+    <div class="card">
+      <h3>Receita: tráfego pago × orgânico · 2026</h3>
+      <div class="donut-wrap">
+        <svg width="132" height="132" viewBox="0 0 42 42" role="img" aria-label="Pizza pago vs orgânico">
+          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#F0ECE4" stroke-width="7"/>
+          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#2A6A40" stroke-width="7"
+                  stroke-dasharray="66 34" stroke-dashoffset="25"/>
+          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#C4AE97" stroke-width="7"
+                  stroke-dasharray="34 66" stroke-dashoffset="59"/>
+          <text x="21" y="20.2" text-anchor="middle" font-size="7" font-weight="600" fill="#1A0E06" font-family="Jost">66%</text>
+          <text x="21" y="27" text-anchor="middle" font-size="3.4" fill="#9A8A7A" font-family="Jost">ORGÂNICO</text>
+        </svg>
+        <div class="donut-leg">
+          <span><i style="background:#2A6A40"></i><b>Orgânico · R$ 413k</b><br><small style="color:var(--muted)">Instagram, indicação, direto</small></span>
+          <span><i style="background:#C4AE97"></i><b>Tráfego pago · R$ 214k</b><br><small style="color:var(--muted)">Meta Ads</small></span>
+        </div>
+      </div>
+      <p class="note">Cada real é atribuído ao canal de onde o cliente veio no cadastro — e segue contando nas recompras.</p>
+    </div>
+
+    <div class="card">
+      <h3>De onde vêm os clientes · base de 91</h3>
+      <div class="orig">
+        <div class="or">
+          <span class="ic" style="background:linear-gradient(45deg,#F9CE34,#EE2A7B 55%,#6228D7)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.3" fill="#fff" stroke="none"/></svg>
+          </span>
+          <span class="nm">Instagram orgânico<small>bio + Linktree</small></span>
+          <span class="qt"><b>38</b>R$ 243k</span>
+        </div>
+        <div class="or">
+          <span class="ic" style="background:#0866FF">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M15.5 8.5H13.2c-.3 0-.7.4-.7 1V12h3l-.5 3h-2.5v7h-3v-7H7v-3h2.5V9.2C9.5 6.9 11 5 13.1 5h2.4v3.5z"/></svg>
+          </span>
+          <span class="nm">Meta Ads<small>anúncios Instagram + Facebook</small></span>
+          <span class="qt"><b>31</b>R$ 214k</span>
+        </div>
+        <div class="or">
+          <span class="ic" style="background:#25D366">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5 13.6c-.2.6-1.2 1.1-1.7 1.2-.4 0-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c0 .2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.7 1.6.3.2.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .8-.5 1.4z"/></svg>
+          </span>
+          <span class="nm">Indicação / WhatsApp<small>cliente indica cliente</small></span>
+          <span class="qt"><b>15</b>R$ 126k</span>
+        </div>
+        <div class="or">
+          <span class="ic" style="background:#fff;border:1px solid var(--line2)">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.4z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.4 14a6 6 0 0 1 0-3.9V7.5H3.1a10 10 0 0 0 0 9l3.3-2.5z"/><path fill="#EA4335" d="M12 6c1.5 0 2.8.5 3.8 1.5L18.7 5A10 10 0 0 0 3.1 7.5L6.4 10c.8-2.3 3-4 5.6-4z"/></svg>
+          </span>
+          <span class="nm">Google<small>busca orgânica</small></span>
+          <span class="qt"><b>7</b>R$ 44k</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Disciplina de follow-up · equipe</h3>
+      <div class="kpis" style="grid-template-columns:1fr 1fr;gap:10px">
+        <div class="kpi"><div class="lbl">Atrasados</div><div class="val" style="color:var(--red)">1</div><div class="delta"><small>Renata · Bella Shoes</small></div></div>
+        <div class="kpi"><div class="lbl">Para hoje</div><div class="val">2</div><div class="delta"><small>Júlio 1 · Carla 1</small></div></div>
+        <div class="kpi"><div class="lbl">Feitos na semana</div><div class="val" style="color:var(--green)">14</div><div class="delta"><small>de 16 combinados</small></div></div>
+        <div class="kpi"><div class="lbl">Cumprimento</div><div class="val">88%</div><div class="delta"><span class="up">▲</span> <small>vs. 81% semana passada</small></div></div>
+      </div>
+      <p class="note">A lista completa de retornos fica no Radar do dia de cada vendedor. Aqui o dono só vê se a equipe está deixando atrasar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ TELA 2 · CLIENTES ════════ -->
+<section class="tela" id="t2">
+  <div class="explica"><b>Para quem: vendedores e dono. Quando: antes de qualquer contato com cliente.</b><br>
+  A carteira inteira num lugar só — evolução da atual aba "Pedidos de preço". Os filtros respondem perguntas do dia a dia: "quais clientes do meu colega de vendas estão parados há mais de 60 dias?", "quem veio de anúncio e nunca comprou?". Clicou no cliente, abre o raio-X: dados puxados automaticamente pelo CNPJ, vendedor responsável, condições combinadas (parcelamento, desconto, frete) — a informação que hoje se pergunta de novo a cada pedido — e a linha do tempo com contatos, pedidos e alertas. Ninguém mais depende de memória ou de procurar conversa antiga no WhatsApp. Cada cliente traz o selo de classe (Curva A, B ou C, pelo quanto fatura), então o vendedor vê na hora quem não pode esfriar: um A parado é urgência, um C é rotina. Cliente recém-chegado já entra com classe provisória pelo tamanho do 1º pedido (selo tracejado) e confirma na recompra.</div>
+
+  <h2>Clientes</h2>
+  <div class="sub-h">91 na base · 34 compraram este mês</div>
+
+  <input class="srch" placeholder="Buscar por nome, CNPJ, cidade…">
+  <div class="chips">
+    <button class="chip on">Todos <b>91</b></button>
+    <button class="chip">Ativos <b>47</b></button>
+    <button class="chip">30+ dias <b>21</b></button>
+    <button class="chip">60+ dias <b>14</b></button>
+    <button class="chip">90+ dias <b>9</b></button>
+    <button class="chip">Carla</button><button class="chip">Júlio</button><button class="chip">Renata</button>
+    <button class="chip">Meta Ads</button><button class="chip">Instagram</button><button class="chip">Indicação</button>
+    <button class="chip">Curva A</button><button class="chip">Curva B</button><button class="chip">Curva C</button>
+  </div>
+
+  <div class="clsleg">
+    Classe pelo quanto fatura:
+    <span class="cls cA">Curva <b>A</b></span> maiores
+    <span class="cls cB">Curva <b>B</b></span> médios
+    <span class="cls cC">Curva <b>C</b></span> menores
+    <span class="cls cB prov">Curva <b>B</b></span> tracejada = provisória (definida pelo 1º pedido, confirma na recompra)
+  </div>
+
+  <div class="card" style="padding:0">
+    <table>
+      <thead><tr><th>Cliente</th><th>Classe</th><th>Cidade</th><th>Vendedor</th><th>Origem</th><th>Última compra</th><th>Total no ano</th><th>Situação</th></tr></thead>
+      <tbody>
+        <tr><td><b>Calçados Estrela ME</b></td><td><span class="cls cA">Curva <b>A</b></span></td><td>Goiânia/GO</td><td>Carla</td><td><span class="org"><span class="mi" style="background:#0866FF"><svg width="12" height="12" viewBox="0 0 24 24" fill="#fff"><path d="M15.5 8.5H13.2c-.3 0-.7.4-.7 1V12h3l-.5 3h-2.5v7h-3v-7H7v-3h2.5V9.2C9.5 6.9 11 5 13.1 5h2.4v3.5z"/></svg></span>Meta Ads</span></td><td>03/07 · R$ 4.980</td><td>R$ 21.340</td><td><span class="tag tg-ok">Ativo</span></td></tr>
+        <tr><td><b>Loja Passo Certo</b></td><td><span class="cls cC">Curva <b>C</b></span></td><td>Anápolis/GO</td><td>Júlio</td><td><span class="org"><span class="mi" style="background:linear-gradient(45deg,#F9CE34,#EE2A7B 55%,#6228D7)"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.3" fill="#fff" stroke="none"/></svg></span>Instagram</span></td><td>28/05 · R$ 3.240</td><td>R$ 10.780</td><td><span class="tag tg-warn">40 dias</span></td></tr>
+        <tr><td><b>Bella Shoes LTDA</b></td><td><span class="cls cB">Curva <b>B</b></span></td><td>Palmas/TO</td><td>Renata</td><td><span class="org"><span class="mi" style="background:#0866FF"><svg width="12" height="12" viewBox="0 0 24 24" fill="#fff"><path d="M15.5 8.5H13.2c-.3 0-.7.4-.7 1V12h3l-.5 3h-2.5v7h-3v-7H7v-3h2.5V9.2C9.5 6.9 11 5 13.1 5h2.4v3.5z"/></svg></span>Meta Ads</span></td><td>25/04 · R$ 6.120</td><td>R$ 18.360</td><td><span class="tag tg-bad">73 dias</span></td></tr>
+        <tr><td><b>Sapataria do Vale</b></td><td><span class="cls cC">Curva <b>C</b></span></td><td>Uberlândia/MG</td><td>Carla</td><td><span class="org"><span class="mi" style="background:#25D366"><svg width="12" height="12" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5 13.6c-.2.6-1.2 1.1-1.7 1.2-.4 0-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c0 .2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.7 1.6.3.2.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .8-.5 1.4z"/></svg></span>Indicação</span></td><td>02/04 · R$ 2.760</td><td>R$ 8.280</td><td><span class="tag tg-bad">96 dias</span></td></tr>
+        <tr><td><b>Estilo Pé Calçados</b></td><td><span class="cls cA">Curva <b>A</b></span></td><td>Brasília/DF</td><td>Carla</td><td><span class="org"><span class="mi" style="background:linear-gradient(45deg,#F9CE34,#EE2A7B 55%,#6228D7)"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.3" fill="#fff" stroke="none"/></svg></span>Instagram</span></td><td>07/05 · R$ 5.400</td><td>R$ 27.600</td><td><span class="tag tg-bad">61 dias</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h3>Ficha do cliente — exemplo ao clicar</h3>
+    <div class="ficha">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start">
+          <div>
+            <h4>Loja Passo Certo <span class="cls cC" style="vertical-align:6px">Curva <b>C</b></span></h4>
+            <p style="font-size:11px;color:var(--muted);margin-top:4px">CNPJ 12.345.678/0001-90 · Anápolis/GO<br>dados preenchidos automaticamente</p>
+          </div>
+          <button class="btn wa sm">WhatsApp</button>
+        </div>
+        <dl class="kv">
+          <dt>Vendedor da conta</dt><dd><span class="avatar" style="width:20px;height:20px;font-size:8px;display:inline-grid;vertical-align:-5px">JU</span> Júlio</dd>
+          <dt>Origem</dt><dd>Instagram (Linktree) · cadastro em 14/02/2026</dd>
+          <dt>Condições combinadas</dt><dd>Pix antecipado · 7% à vista · frete grátis acima de R$ 5.000</dd>
+          <dt>Costuma comprar</dt><dd>Scarpin e sandália salto médio · grade completa</dd>
+          <dt>Classe (curva ABC)</dt><dd><span class="cls cC">Curva <b>C</b></span> R$ 10.780 no ano · confirmada pelo histórico</dd>
+        </dl>
+        <div class="ministats">
+          <div class="ms"><b>R$ 10.780</b><span>no ano</span></div>
+          <div class="ms"><b>R$ 3.590</b><span>ticket médio</span></div>
+          <div class="ms"><b>43 dias</b><span>ciclo de compra</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Linha do tempo</h3>
+        <div class="tl">
+          <div class="ev alerta"><div class="tt"><b>Alerta</b> — passou de 40 dias sem comprar (ciclo dele é 43)</div><div class="dt">hoje</div></div>
+          <div class="ev"><div class="tt"><b>Contato</b> — Júlio mandou catálogo da coleção inverno <span style="color:var(--muted)">· "vai ver com a sócia"</span></div><div class="dt">01/07</div></div>
+          <div class="ev pedido"><div class="tt"><b>Pedido pago</b> — R$ 3.240 · 24 pares · veio pelo site</div><div class="dt">28/05</div></div>
+          <div class="ev pedido"><div class="tt"><b>Pedido pago</b> — R$ 4.560 · 36 pares · veio pelo site</div><div class="dt">19/04</div></div>
+          <div class="ev pedido"><div class="tt"><b>Pedido pago</b> — R$ 2.980 · 18 pares · lançado manualmente (WhatsApp)</div><div class="dt">02/03</div></div>
+          <div class="ev"><div class="tt"><b>Cadastro</b> · chegou pelo Instagram</div><div class="dt">14/02</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ TELA 3 · RADAR (KANBAN 1) ════════ -->
+<section class="tela" id="t3">
+  <div class="explica"><b>Para quem: cada vendedor (vê só a própria carteira). Quando: primeira tela do dia.</b><br>
+  Hoje a venda é reativa: atende quem chama. Esta tela inverte isso — o sistema monta sozinho a lista de quem procurar hoje, por três motivos: cliente passando do ciclo de recompra dele, pedido montado no site e não enviado (abandono) e cadastro novo que ainda não comprou. O vendedor trabalha arrastando os cartões: contatou, move; virou pedido, move. Cartão com borda vermelha passou do prazo; a bolinha mostra se há retorno agendado. O botão verde abre o WhatsApp já com a mensagem certa pro contexto. <b>Clique em qualquer cartão</b> pra ver como se registra o contato, combina o retorno e edita os dados — nada de tela de cadastro complicada. Embaixo, os retornos combinados ("cliente pediu pra ligar quinta") — o combinado vira compromisso, não fica na cabeça de ninguém.</div>
+
+  <h2>Radar do dia</h2>
+  <div class="sub-h">Carteira da Carla · 3 recompras + 2 abandonos</div>
+
+  <div class="kb">
+    <div class="kb-col">
+      <div class="kb-hd"><b>A contatar hoje</b><span>5</span></div>
+      <div class="kb-sum">R$ 18.010 em potencial</div>
+      <div class="kb-cards">
+        <div class="kcard rot">
+          <div class="top"><div><div class="cli">Sapataria do Vale</div><div class="val">R$ 2.760 <small style="font-size:11px;color:var(--muted)">última compra</small></div></div><span class="dot r"></span></div>
+          <div class="hint">96 dias sem comprar · costuma levar mocassim</div>
+          <div class="tags"><span class="cls cC">Curva <b>C</b></span><span class="tag tg-bad">Recompra 90+</span></div>
+          <div class="meta"><span class="dias late">venceu há 6 dias</span><span class="avatar av">CA</span></div>
+          <div class="acts"><button class="btn wa sm">Mensagem pronta</button><button class="btn ghost sm">Sem interesse</button></div>
+        </div>
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Estilo Pé Calçados</div><div class="val">R$ 5.400 <small style="font-size:11px;color:var(--muted)">última compra</small></div></div><span class="dot a"></span></div>
+          <div class="hint">61 dias sem comprar · costuma levar scarpin</div>
+          <div class="tags"><span class="cls cA">Curva <b>A</b></span><span class="tag tg-bad">Recompra 60+</span></div>
+          <div class="meta"><span class="dias">para hoje</span><span class="avatar av">CA</span></div>
+          <div class="acts"><button class="btn wa sm">Mensagem pronta</button><button class="btn ghost sm">Sem interesse</button></div>
+        </div>
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Calçados Nova Era</div><div class="val">R$ 3.870 <small style="font-size:11px;color:var(--muted)">carrinho parado</small></div></div><span class="dot a"></span></div>
+          <div class="hint">Carrinho de 30 pares parado desde ontem · não chegou a enviar</div>
+          <div class="tags"><span class="cls cB prov" title="Classe provisória definida pelo 1º pedido; confirma na recompra">Curva <b>B</b></span><span class="tag tg-warn">Abandono de pedido</span></div>
+          <div class="meta"><span class="dias">ontem</span><span class="avatar av">CA</span></div>
+          <div class="acts"><button class="btn wa sm">Recuperar pedido</button></div>
+        </div>
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Lojão do Sapato</div><div class="val">— <small style="font-size:11px;color:var(--muted)">sem pedido ainda</small></div></div><span class="dot a"></span></div>
+          <div class="hint">Cadastrou hoje 09:15 · navegou 18 min sem montar pedido</div>
+          <div class="tags"><span class="tag tg-warn">Lead quente</span><span class="tag tg-gold">Anúncio</span></div>
+          <div class="meta"><span class="dias">hoje</span><span class="avatar av">CA</span></div>
+          <div class="acts"><button class="btn wa sm">Boas-vindas</button></div>
+        </div>
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Moda &amp; Passo</div><div class="val">R$ 1.980 <small style="font-size:11px;color:var(--muted)">última compra</small></div></div><span class="dot g"></span></div>
+          <div class="hint">32 dias sem comprar · costuma levar rasteira</div>
+          <div class="tags"><span class="cls cC">Curva <b>C</b></span><span class="tag tg-warn">Recompra 30+</span></div>
+          <div class="meta"><span class="dias">agendado 14h</span><span class="avatar av">CA</span></div>
+          <div class="acts"><button class="btn wa sm">Mensagem pronta</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="kb-col">
+      <div class="kb-hd"><b>Contatado · aguardando</b><span>2</span></div>
+      <div class="kb-sum">R$ 8.640 em conversa</div>
+      <div class="kb-cards">
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Loja Passo Certo</div><div class="val">R$ 3.240 <small style="font-size:11px;color:var(--muted)">última compra</small></div></div><span class="dot g"></span></div>
+          <div class="hint">Respondeu que vai ver com a sócia · retorno combinado 5ª feira</div>
+          <div class="tags"><span class="cls cC">Curva <b>C</b></span><span class="tag tg-warn">Recompra 40d</span></div>
+          <div class="meta"><span class="dias">contatado 01/07</span><span class="avatar av" style="background:#EDE4D8">JU</span></div>
+        </div>
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Bella Shoes LTDA</div><div class="val">R$ 6.120 <small style="font-size:11px;color:var(--muted)">última compra</small></div></div><span class="dot a"></span></div>
+          <div class="hint">Pediu catálogo da coleção nova · cobrar resposta hoje</div>
+          <div class="tags"><span class="cls cB">Curva <b>B</b></span><span class="tag tg-bad">Recompra 70+</span></div>
+          <div class="meta"><span class="dias">contatado 04/07</span><span class="avatar av" style="background:#EDE4D8">RE</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="kb-col">
+      <div class="kb-hd"><b>Pedido gerado 🎉</b><span>2 esta semana</span></div>
+      <div class="kb-sum">R$ 7.120 recuperados</div>
+      <div class="kb-cards">
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Calçados Estrela ME <span class="cls cA"><b>A</b></span></div><div class="val">R$ 4.980</div></div><span class="dot g"></span></div>
+          <div class="hint">Voltou após 38 dias · pedido fechado pelo site</div>
+          <div class="tags"><span class="cls cA">Curva <b>A</b></span><span class="tag tg-ok">Reativado</span></div>
+          <div class="meta"><span class="dias">hoje 10:12</span><span class="avatar av">CA</span></div>
+        </div>
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Moda &amp; Passo <span class="cls cC"><b>C</b></span></div><div class="val">R$ 2.140</div></div><span class="dot g"></span></div>
+          <div class="hint">Voltou após 45 dias · pedido lançado manual (WhatsApp)</div>
+          <div class="tags"><span class="tag tg-ok">Reativado</span></div>
+          <div class="meta"><span class="dias">hoje 09:38</span><span class="avatar av">CA</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="duo" style="grid-template-columns:1fr 1fr;margin-top:18px">
+    <div class="card">
+      <h3>Follow-ups · retornos combinados</h3>
+      <div class="fups">
+        <div class="fup"><span class="ck"></span><span class="tx"><b>Bella Shoes</b> — cobrar resposta do catálogo inverno<small>Renata · combinado sexta passada</small></span><span class="qd late">atrasado</span></div>
+        <div class="fup"><span class="ck"></span><span class="tx"><b>Loja Passo Certo</b> — "vai ver com a sócia", retornar<small>Júlio · combinado pra hoje</small></span><span class="qd today">hoje</span></div>
+        <div class="fup"><span class="ck"></span><span class="tx"><b>Moda &amp; Passo</b> — ligar 14h sobre grade completa<small>Carla · agendado</small></span><span class="qd today">hoje 14h</span></div>
+        <div class="fup"><span class="ck done"></span><span class="tx"><b>Calçados Estrela</b> — enviar Pix do pedido<small>Carla · feito às 10h</small></span><span class="qd next">feito</span></div>
+        <div class="fup"><span class="ck"></span><span class="tx"><b>Estilo Pé</b> — apresentar coleção nova<small>Carla · quinta-feira</small></span><span class="qd next">qui</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Como funciona</h3>
+      <p style="font-size:14px;line-height:1.6;color:var(--t2)">Todo contato registrado pode ganhar um <b style="color:var(--ink)">retorno combinado</b> ("cliente pediu pra ligar quinta"). No dia, ele aparece aqui e vira cartão na coluna "A contatar hoje". Se passar do prazo, fica vermelho — e o atraso aparece no painel do dono.</p>
+      <p class="note">Nada depende de memória: o combinado com o cliente vira compromisso no sistema.</p>
+    </div>
+  </div>
+
+  <p class="note">O dono vê o radar de todas as carteiras; cada vendedor só vê a sua. Cliente marcado "sem interesse" sai da fila por 60 dias.</p>
+</section>
+
+<!-- ════════ TELA 4 · PEDIDOS (KANBAN 2) ════════ -->
+<section class="tela" id="t4">
+  <div class="explica"><b>Para quem: vendas e financeiro. Quando: o dia inteiro — é a esteira de pedidos.</b><br>
+  Todos os pedidos num quadro só: os que chegam sozinhos pelo site e os fechados direto no WhatsApp, que o vendedor registra pelo botão "+ Lançar pedido" (sem isso, metade da operação ficaria fora das contas). O pedido anda da esquerda pra direita: <b>Em negociação → Aguardando pagamento → Pago</b>. A conferência do pagamento — hoje feita pelo financeiro fora de qualquer sistema de acompanhamento — vira um clique, que libera a separação e carimba o pedido nas contas de retorno. Regra de ouro: só pedido na coluna Pago entra no faturamento e no ROI, então número inflado não existe. Cartão parado tempo demais ganha borda vermelha pra ninguém esquecer pedido no limbo.</div>
+
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap;margin-bottom:16px">
+    <div><h2>Pedidos</h2><div class="sub-h" style="margin:0">Julho · 41 pedidos · R$ 118k pagos</div></div>
+    <button class="btn">＋ Lançar pedido</button>
+  </div>
+
+  <div class="kb">
+    <div class="kb-col">
+      <div class="kb-hd"><b>Em negociação</b><span>3</span></div>
+      <div class="kb-sum">R$ 9.290</div>
+      <div class="kb-cards">
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Moda &amp; Passo <span class="cls cC"><b>C</b></span></div><div class="val">R$ 2.140</div></div><span class="dot g"></span></div>
+          <div class="tags"><span class="tag tg-mut">WhatsApp · manual</span><span class="tag tg-mut">18 pares</span></div>
+          <div class="meta"><span class="dias">há 2 horas</span><span class="avatar av">CA</span></div>
+        </div>
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Bella Shoes LTDA <span class="cls cB"><b>B</b></span></div><div class="val">R$ 4.320</div></div><span class="dot a"></span></div>
+          <div class="tags"><span class="tag tg-mut">WhatsApp · manual</span><span class="tag tg-mut">36 pares</span></div>
+          <div class="meta"><span class="dias">há 1 dia</span><span class="avatar av" style="background:#EDE4D8">RE</span></div>
+        </div>
+        <div class="kcard rot">
+          <div class="top"><div><div class="cli">Calçados Nova Era <span class="cls cB prov" title="Classe provisória pelo 1º pedido"><b>B</b></span></div><div class="val">R$ 2.830</div></div><span class="dot r"></span></div>
+          <div class="tags"><span class="tag tg-mut">Site</span><span class="tag tg-mut">24 pares</span></div>
+          <div class="meta"><span class="dias late">5 dias parado</span><span class="avatar av">CA</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="kb-col">
+      <div class="kb-hd"><b>Aguardando pagamento</b><span>2</span></div>
+      <div class="kb-sum">R$ 8.220</div>
+      <div class="kb-cards">
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Calçados Estrela ME <span class="cls cA"><b>A</b></span></div><div class="val">R$ 4.980</div></div><span class="dot a"></span></div>
+          <div class="tags"><span class="tag tg-mut">Site</span><span class="tag tg-mut">36 pares</span><span class="tag tg-gold">Pix enviado</span></div>
+          <div class="meta"><span class="dias">hoje 10:12</span><span class="avatar av">CA</span></div>
+          <div class="acts"><button class="btn sm">✓ Confirmar pagamento</button></div>
+        </div>
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Passo Firme Calçados <span class="cls cB"><b>B</b></span></div><div class="val">R$ 3.240</div></div><span class="dot g"></span></div>
+          <div class="tags"><span class="tag tg-mut">Site</span><span class="tag tg-mut">24 pares</span></div>
+          <div class="meta"><span class="dias">ontem 17:40</span><span class="avatar av" style="background:#EDE4D8">JU</span></div>
+          <div class="acts"><button class="btn sm">✓ Confirmar pagamento</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="kb-col">
+      <div class="kb-hd"><b>Pago · liberado p/ envio</b><span>36 no mês</span></div>
+      <div class="kb-sum">R$ 118.040 confirmados</div>
+      <div class="kb-cards">
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Loja Passo Certo <span class="cls cC"><b>C</b></span></div><div class="val">R$ 3.240</div></div><span class="dot g"></span></div>
+          <div class="tags"><span class="tag tg-ok">Pago ✓</span><span class="tag tg-mut">Site</span></div>
+          <div class="meta"><span class="dias">06/07 · baixa: financeiro</span><span class="avatar av" style="background:#EDE4D8">JU</span></div>
+        </div>
+        <div class="kcard">
+          <div class="top"><div><div class="cli">Bella Shoes LTDA <span class="cls cB"><b>B</b></span></div><div class="val">R$ 6.120</div></div><span class="dot g"></span></div>
+          <div class="tags"><span class="tag tg-ok">Pago ✓</span><span class="tag tg-mut">WhatsApp · manual</span></div>
+          <div class="meta"><span class="dias">05/07 · baixa: financeiro</span><span class="avatar av" style="background:#EDE4D8">RE</span></div>
+        </div>
+        <div class="kcard" style="text-align:center;color:var(--muted);font-size:12px;cursor:pointer">ver os 36 pedidos pagos →</div>
+      </div>
+    </div>
+  </div>
+  <div class="kb-drop"><span class="win">✓ arrastar aqui: pago</span><span class="lose">✕ arrastar aqui: perdido</span></div>
+</section>
+
+<!-- ════════ TELA 5 · FUNIS & ROI ════════ -->
+<section class="tela" id="t5">
+  <div class="explica"><b>Para quem: dono (e quem cuida do marketing). Quando: fechamento do mês e decisão de verba.</b><br>
+  A Visão Geral diz <i>quanto</i>; esta tela diz <i>por quê</i> e <i>onde agir</i>. O funil de aquisição mostra onde se perde gente no caminho (4.120 visitas viraram 206 cadastros e 58 compradores; o gargalo fica visível). O funil de retenção mostra quanto dinheiro por ano está esfriando em cada faixa de inatividade e quanto o radar recuperou. E a receita por origem responde a pergunta de todo anunciante: "o anúncio se paga?" — contando não só a primeira compra, mas tudo que o cliente comprou depois. É com esta tela que se decide aumentar, manter ou realocar a verba de anúncio.</div>
+
+  <h2>Funis &amp; ROI</h2>
+  <div class="sub-h">Julho 2026</div>
+
+  <div class="duo" style="grid-template-columns:1fr 1fr">
+    <div class="card">
+      <h3>Funil de aquisição</h3>
+      <div class="funil">
+        <div class="st">
+          <div class="hd"><span>Visitantes do site</span><b>4.120</b></div>
+          <div class="bar" style="width:100%">
+            <div class="seg" style="width:48%;background:#0866FF" data-tip="Meta Ads · 1.980 visitas · ticket médio R$ 6.900"></div>
+            <div class="seg" style="width:32%;background:#C13584" data-tip="Instagram orgânico · 1.320 visitas · ticket médio R$ 6.400"></div>
+            <div class="seg" style="width:14%;background:#8A6A20" data-tip="Google · 560 visitas · ticket médio R$ 6.300"></div>
+            <div class="seg" style="width:6%;background:#25D366" data-tip="Indicação / WhatsApp · 260 visitas · ticket médio R$ 8.400"></div>
+          </div>
+        </div>
+        <div class="conv">↓ <b>5%</b> viram cadastro</div>
+        <div class="st">
+          <div class="hd"><span>Cadastros (CNPJ)</span><b>206</b></div>
+          <div class="bar" style="width:72%">
+            <div class="seg" style="width:46%;background:#0866FF" data-tip="Meta Ads · 95 cadastros · ticket médio R$ 6.900"></div>
+            <div class="seg" style="width:33%;background:#C13584" data-tip="Instagram orgânico · 68 cadastros · ticket médio R$ 6.400"></div>
+            <div class="seg" style="width:13%;background:#8A6A20" data-tip="Google · 27 cadastros · ticket médio R$ 6.300"></div>
+            <div class="seg" style="width:8%;background:#25D366" data-tip="Indicação / WhatsApp · 16 cadastros · ticket médio R$ 8.400"></div>
+          </div>
+        </div>
+        <div class="conv">↓ <b>28%</b> fazem o 1º pedido</div>
+        <div class="st">
+          <div class="hd"><span>1º pedido pago</span><b>58</b></div>
+          <div class="bar" style="width:46%">
+            <div class="seg" style="width:57%;background:#0866FF" data-tip="Meta Ads · 33 pedidos · ticket médio R$ 6.900"></div>
+            <div class="seg" style="width:29%;background:#C13584" data-tip="Instagram orgânico · 17 pedidos · ticket médio R$ 6.400"></div>
+            <div class="seg" style="width:14%;background:#8A6A20" data-tip="Google · 8 pedidos · ticket médio R$ 6.300"></div>
+          </div>
+        </div>
+        <div class="conv">↓ <b>62%</b> voltam a comprar</div>
+        <div class="st">
+          <div class="hd"><span>Recorrentes</span><b>36</b></div>
+          <div class="bar" style="width:34%">
+            <div class="seg" style="width:67%;background:#0866FF" data-tip="Meta Ads · 24 recorrentes · ticket médio R$ 6.900"></div>
+            <div class="seg" style="width:33%;background:#C13584" data-tip="Instagram orgânico · 12 recorrentes · ticket médio R$ 6.400"></div>
+          </div>
+        </div>
+      </div>
+      <div class="funleg">
+        <span><i style="background:#0866FF"></i>Meta Ads</span>
+        <span><i style="background:#C13584"></i>Instagram orgânico</span>
+        <span><i style="background:#8A6A20"></i>Google</span>
+        <span><i style="background:#25D366"></i>Indicação / WhatsApp</span>
+      </div>
+      <p class="note">Cada barra é fatiada pela origem do cliente, então dá pra ver de onde vem o gargalo. Passe o mouse numa fatia para o ticket médio daquele canal. 206 cadastros e 58 já compraram; sobram 148 leads quentes pro radar trabalhar.</p>
+    </div>
+    <div class="card">
+      <h3>Funil de retenção · base de 91</h3>
+      <div class="retf">
+        <div class="top">
+          <div class="t"><div class="k">Base ativa</div><div class="v">91</div><small>clientes na carteira</small></div>
+          <div class="t"><div class="k">Esfriando (30d+)</div><div class="v" style="color:#B25E2E">44</div><small>R$ 153k/ano em risco</small></div>
+          <div class="t"><div class="k">Recuperados no mês</div><div class="v" style="color:var(--green)">5</div><small>R$ 16,9k de volta</small></div>
+        </div>
+
+        <div class="row">
+          <div class="fx">Ativos<small>≤ 30 dias</small></div>
+          <div class="trk"><i style="width:100%;background:var(--green)">47</i></div>
+          <div class="money">R$ 402k<small>faturando</small></div>
+          <span class="stx" style="background:rgba(42,106,64,.12);color:var(--green)">Saudável</span>
+        </div>
+        <div class="row">
+          <div class="fx">Esfriando<small>30–60 dias</small></div>
+          <div class="trk"><i style="width:45%;background:#C99A2E">21</i></div>
+          <div class="money">R$ 68k<small>em risco/ano</small></div>
+          <span class="stx" style="background:rgba(201,154,46,.16);color:#9A741E">Atenção</span>
+        </div>
+        <div class="row">
+          <div class="fx">Frios<small>60–90 dias</small></div>
+          <div class="trk"><i style="width:30%;background:#B25E2E">14</i></div>
+          <div class="money">R$ 51k<small>em risco/ano</small></div>
+          <span class="stx" style="background:rgba(178,94,46,.16);color:#B25E2E">Risco</span>
+        </div>
+        <div class="row">
+          <div class="fx">Perdendo<small>90+ dias</small></div>
+          <div class="trk"><i style="width:19%;background:var(--red)">9</i></div>
+          <div class="money">R$ 34k<small>em risco/ano</small></div>
+          <span class="stx" style="background:rgba(178,58,46,.14);color:var(--red)">Crítico</span>
+        </div>
+
+        <div class="recu">
+          <span class="big">♻️ 5</span>
+          <span class="tx"><b>Reativados no mês</b> pelo radar de recompra, R$ 16.900 que já tinham esfriado e voltaram a comprar.</span>
+        </div>
+      </div>
+      <p class="note">As faixas Atenção, Risco e Crítico somam 44 clientes e R$ 153 mil/ano esfriando; é exatamente a fila que o radar trabalha todo dia. Meta: subir a positivação de 34 para 45 compradores por mês.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h3>Receita por origem · acumulado 2026</h3>
+    <div class="barlist" style="margin-top:6px">
+      <div class="bl"><span class="nm">Anúncio</span><span class="tr"><i style="width:88%;background:var(--green)">R$ 214k</i></span><span class="vl">31 clientes</span></div>
+      <div class="bl"><span class="nm">Instagram</span><span class="tr"><i style="width:100%;background:#3A7A50">R$ 243k</i></span><span class="vl">38 clientes</span></div>
+      <div class="bl"><span class="nm">Indicação</span><span class="tr"><i style="width:52%;background:var(--gold);color:#3A2A1A">R$ 126k</i></span><span class="vl">15 clientes</span></div>
+      <div class="bl"><span class="nm">Direto</span><span class="tr"><i style="width:18%;background:var(--alt2);color:var(--t2)">R$ 44k</i></span><span class="vl">7 clientes</span></div>
+    </div>
+    <p class="note">Quanto vale um cliente de cada canal, somando tudo que ele comprou no ano: indicação R$ 8.400 · Meta Ads R$ 6.900 · Instagram R$ 6.400. Olhando só o 1º pedido, o anúncio retorna 4,2×; somando as recompras do ano, <b>11×</b> — cada R$ 1 investido em anúncio trouxe R$ 11 de volta. É este número que decide a verba do mês que vem.</p>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h3>Onde estão os clientes · dados para o anúncio</h3>
+    <div class="duo" style="margin-top:6px">
+      <div>
+        <div style="font-size:12px;color:var(--muted);letter-spacing:.03em;margin-bottom:8px">CLIENTES QUE COMPRAM, POR ESTADO</div>
+        <div class="barlist">
+          <div class="bl"><span class="nm">São Paulo</span><span class="tr"><i style="width:100%;background:var(--green)">34</i></span><span class="vl">37%</span></div>
+          <div class="bl"><span class="nm">Minas Gerais</span><span class="tr"><i style="width:53%;background:#3A7A50">18</i></span><span class="vl">20%</span></div>
+          <div class="bl"><span class="nm">Rio de Janeiro</span><span class="tr"><i style="width:35%;background:#4A8A60">12</i></span><span class="vl">13%</span></div>
+          <div class="bl"><span class="nm">Paraná</span><span class="tr"><i style="width:26%;background:var(--gold);color:#3A2A1A">9</i></span><span class="vl">10%</span></div>
+          <div class="bl"><span class="nm">Outros</span><span class="tr"><i style="width:53%;background:var(--alt2);color:var(--t2)">18</i></span><span class="vl">20%</span></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;color:var(--muted);letter-spacing:.03em;margin-bottom:8px">PERFIL DO LOJISTA (pelo CNPJ)</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span class="tag" style="background:var(--alt2);color:var(--t1)">Loja de calçados · 58%</span>
+          <span class="tag" style="background:var(--alt2);color:var(--t1)">Magazine/vestuário · 26%</span>
+          <span class="tag" style="background:var(--alt2);color:var(--t1)">Sacoleira/MEI · 16%</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px">
+          <span class="tag" style="background:var(--alt2);color:var(--t1)">📱 Celular · 82%</span>
+          <span class="tag" style="background:var(--alt2);color:var(--t1)">🕕 Pico 18h–21h</span>
+          <span class="tag" style="background:var(--alt2);color:var(--t1)">Empresa &gt; 3 anos · 71%</span>
+        </div>
+        <p style="font-size:13px;margin-top:14px;line-height:1.5">O perfil dos clientes que <b>mais compram</b> vira o alvo do anúncio: loja de calçado consolidada, no celular, no fim de tarde. Anúncio mirado nesse perfil desperdiça menos verba.</p>
+      </div>
+    </div>
+    <p class="note"><b>Lookalike no Meta Ads:</b> a lista de CNPJs que viraram clientes bons é exportada e o Meta acha lojistas parecidos, em vez de pagar pra alcançar qualquer um. E devolvendo ao anúncio quem de fato <b>pagou</b> (não só clicou), o Meta passa a otimizar por comprador real. Tudo isso sai de dados que já entram pelo cadastro; não precisa pedir nada a mais ao cliente.</p>
+  </div>
+</section>
+
+<!-- ════════ TELA 6 · DISPAROS POR EMAIL ════════ -->
+<section class="tela" id="t6">
+  <div class="explica"><b>Para quem: dono (e quem cuida do marketing). Quando: coleção nova, reativar quem esfriou, avisar de campanha.</b><br>
+  Manda um email pra vários clientes de uma vez a partir de templates prontos, no visual da marca, sem escrever nada do zero e sem planilha solta. O dono escolhe o template, escolhe um grupo pronto (clientes frios, curva A, quem nunca fez o 2º pedido) e dispara. A lista se monta sozinha a partir do radar, e o que voltar em pedido cai na ficha do cliente, então dá pra ver quanto cada disparo trouxe de volta.</div>
+
+  <h2>Disparos por email</h2>
+  <div class="sub-h">Últimos 30 dias · 3 campanhas enviadas</div>
+
+  <div class="mstat">
+    <div class="card"><div class="k">Emails enviados</div><div class="v">248</div></div>
+    <div class="card"><div class="k">Taxa de abertura</div><div class="v">41%<small> · 102 abriram</small></div></div>
+    <div class="card"><div class="k">Cliques no catálogo</div><div class="v">37</div></div>
+    <div class="card"><div class="k">Pedidos gerados</div><div class="v" style="color:var(--green)">R$ 58k<small> · 9 pedidos</small></div></div>
+  </div>
+
+  <div class="card mail">
+    <h3>1 · Escolha o template</h3>
+    <p class="note" style="margin-top:0">Modelos prontos, no visual da marca. Você não escreve o email do zero: clica no template e ele já vem com texto e foto. Só troca o essencial (nome da coleção, link, data). O nome de cada cliente entra sozinho.</p>
+    <div class="tplgrid">
+      <div class="tpl on">
+        <div class="thumb"><div class="bar" style="background:var(--green)"></div><div class="ln"></div><div class="ln s"></div><div class="bt" style="background:var(--green)"></div></div>
+        <div class="cap">Coleção nova <span class="on-mk">✓ em uso</span></div>
+      </div>
+      <div class="tpl">
+        <div class="thumb"><div class="bar" style="background:#B25E2E"></div><div class="ln"></div><div class="ln s"></div><div class="bt" style="background:#B25E2E"></div></div>
+        <div class="cap">Sentimos sua falta <span class="on-mk">✓ em uso</span></div>
+      </div>
+      <div class="tpl">
+        <div class="thumb"><div class="bar" style="background:var(--red)"></div><div class="ln"></div><div class="ln s"></div><div class="bt" style="background:var(--red)"></div></div>
+        <div class="cap">Queima / últimas peças <span class="on-mk">✓ em uso</span></div>
+      </div>
+      <div class="tpl">
+        <div class="thumb"><div class="bar" style="background:var(--gold)"></div><div class="ln"></div><div class="ln s"></div><div class="bt" style="background:var(--gold)"></div></div>
+        <div class="cap">Condição curva A <span class="on-mk">✓ em uso</span></div>
+      </div>
+      <div class="tpl">
+        <div class="thumb"><div class="bar" style="background:var(--amber)"></div><div class="ln"></div><div class="ln s"></div><div class="bt" style="background:var(--amber)"></div></div>
+        <div class="cap">Aviso / recado <span class="on-mk">✓ em uso</span></div>
+      </div>
+      <div class="tpl">
+        <div class="thumb"><div class="bar" style="background:var(--ink)"></div><div class="ln"></div><div class="ln s"></div><div class="bt" style="background:var(--ink)"></div></div>
+        <div class="cap">Boas-vindas (cadastro) <span class="on-mk">✓ em uso</span></div>
+      </div>
+    </div>
+    <p class="note">Templates novos são desenhados uma vez e ficam salvos aqui; o dono não precisa mexer em código nem em imagem, só escolher e disparar.</p>
+  </div>
+
+  <div class="duo" style="grid-template-columns:1fr 1fr">
+    <div class="card mail">
+      <h3>2 · Prévia · é assim que o cliente recebe</h3>
+      <div class="mprev">
+        <div class="top" style="background:var(--green)"><img src="data:image/png;base64,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" alt="Biaritz" style="width:130px;display:block;margin:0 auto"></div>
+        <div class="bd">
+          <h4>Chegou a coleção Inverno 26</h4>
+          <p style="margin:0 0 10px">Olá, <b>Passo Certo</b>! Separamos os modelos que mais saem no atacado: mocassim, scarpin e bota, com preço de lojista.</p>
+          <div class="grid">
+            <img src="data:image/webp;base64,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" alt="">
+            <img src="data:image/webp;base64,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" alt="">
+            <img src="data:image/webp;base64,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" alt="">
+          </div>
+          <a class="cta">Ver catálogo e montar pedido</a>
+        </div>
+        <div class="foot">Biaritz Calçados · CNPJ 00.000.000/0001-00<br>Não quer mais receber? Descadastrar</div>
+      </div>
+      <label>Assunto (o que aparece na caixa de entrada)</label>
+      <input type="text" value="Chegou a coleção Inverno 26, dá uma olhada 👞">
+      <div class="send">
+        <button class="btn">Enviar agora</button>
+        <button class="btn ghost">Agendar</button>
+        <button class="btn ghost">Enviar teste pra mim</button>
+      </div>
+    </div>
+
+    <div class="card aud">
+      <h3>Quem vai receber</h3>
+      <p class="note" style="margin-top:0">Escolha um grupo pronto. A lista se monta a partir do radar e da carteira, sempre atualizada.</p>
+
+      <div class="seg on">
+        <span class="nm">Clientes frios (30d+)<small>esfriando, alvo de reativação</small></span>
+        <span class="ct">44</span>
+      </div>
+      <div class="seg">
+        <span class="nm">Curva A e B<small>os que mais faturam</small></span>
+        <span class="ct">29</span>
+      </div>
+      <div class="seg">
+        <span class="nm">Só fizeram 1 pedido<small>puxar a recompra</small></span>
+        <span class="ct">22</span>
+      </div>
+      <div class="seg">
+        <span class="nm">Base ativa inteira<small>todos com CNPJ cadastrado</small></span>
+        <span class="ct">91</span>
+      </div>
+
+      <div class="count"><b>44</b> clientes selecionados neste disparo</div>
+      <p class="note">Quem pediu pra não receber email fica de fora automaticamente (descadastro por lei). O sistema não deixa mandar duas vezes o mesmo disparo pro mesmo cliente.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h3>Histórico de disparos</h3>
+    <table style="margin-top:6px">
+      <thead><tr><th>Campanha</th><th>Enviado</th><th>Público</th><th>Abertura</th><th>Cliques</th><th>Pedidos</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>Coleção Inverno 26</b></td><td>02/07</td><td>91</td><td>46%</td><td>21</td>
+          <td style="color:var(--green)">R$ 41k · 6</td><td><span class="tag tg-ok">Concluído</span></td>
+        </tr>
+        <tr>
+          <td><b>Sentimos sua falta</b></td><td>24/06</td><td>44</td><td>38%</td><td>11</td>
+          <td style="color:var(--green)">R$ 17k · 3</td><td><span class="tag tg-ok">Concluído</span></td>
+        </tr>
+        <tr>
+          <td><b>Condição curva A</b></td><td>18/06</td><td>29</td><td>52%</td><td>5</td>
+          <td class="tg-mut" style="color:var(--muted)">em apuração</td><td><span class="tag tg-ok">Concluído</span></td>
+        </tr>
+        <tr>
+          <td><b>Queima de estoque</b></td><td>agendado 10/07</td><td>91</td><td>—</td><td>—</td>
+          <td class="tg-mut" style="color:var(--muted)">—</td><td><span class="tag tg-warn">Agendado</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">A coluna Pedidos cruza quem abriu o email com quem comprou nos dias seguintes; é o que mostra se o disparo valeu a pena. O de curva A vendeu 52% de abertura mas ainda está apurando pedido, porque esse cliente costuma fechar por telefone depois.</p>
+  </div>
+</section>
+
+</main>
+<footer>Simulação estática para apresentação — dados fictícios. Arquivo local (_preview), não publicado.</footer>
+
+<div class="drawer-bg" id="dbg"></div>
+<aside class="drawer" id="drawer">
+  <button class="dx" id="dclose">✕</button>
+  <h4>Estilo Pé Calçados</h4>
+  <div class="dsub">Brasília/DF · carteira da Carla · curva A · 61 dias sem comprar</div>
+
+  <div class="dblk">
+    <h5>Contexto (preenchido pelo sistema)</h5>
+    <p style="font-size:13.5px;color:var(--t2);line-height:1.55">Última compra <b style="color:var(--ink)">R$ 5.400</b> em 07/05 (36 pares, sandália salto médio). Ciclo médio dele: 45 dias — <b style="color:var(--red)">estourou há 16</b>. Condição combinada: Pix antecipado · 7% à vista.</p>
+  </div>
+
+  <div class="dblk">
+    <h5>1 · Falar com o cliente</h5>
+    <div class="row2">
+      <button class="btn wa">WhatsApp — mensagem pronta</button>
+      <span style="font-size:12px;color:var(--muted)">abre a conversa já escrita, só revisar e enviar</span>
+    </div>
+  </div>
+
+  <div class="dblk">
+    <h5>2 · Registrar o que aconteceu</h5>
+    <textarea>Falei com o comprador — vão fazer pedido da coleção nova, pediu pra retornar quinta de manhã com o catálogo.</textarea>
+    <div class="row2" style="margin-top:8px">
+      <select><option>Resultado: vai comprar</option><option>Resultado: pediu retorno</option><option>Resultado: sem interesse agora</option><option>Resultado: não respondeu</option></select>
+    </div>
+  </div>
+
+  <div class="dblk">
+    <h5>3 · Combinar retorno (follow-up)</h5>
+    <div class="row2">
+      <input type="date" value="2026-07-09"><input type="time" value="09:30">
+      <span style="font-size:12px;color:var(--muted)">→ vira cartão em "A contatar" na quinta e entra na lista de retornos</span>
+    </div>
+  </div>
+
+  <div class="dblk">
+    <h5>4 · Mover no quadro</h5>
+    <div class="dmove">
+      <button class="btn ghost">A contatar</button>
+      <button class="btn ghost on">Contatado · aguardando</button>
+      <button class="btn ghost">Pedido gerado</button>
+      <button class="btn ghost" style="color:var(--red);border-color:#E0BDB6">Sem interesse (sai por 60d)</button>
+    </div>
+  </div>
+
+  <div class="dblk" style="display:flex;gap:8px">
+    <button class="btn">Salvar</button>
+    <button class="btn ghost" id="dclose2">Cancelar</button>
+  </div>
+  <p class="note">Tudo que for salvo aqui entra na linha do tempo da ficha do cliente — o histórico nunca se perde.</p>
+</aside>
+
+<script>
+const drawer=document.getElementById('drawer'),dbg=document.getElementById('dbg');
+function openD(){drawer.classList.add('on');dbg.classList.add('on')}
+function closeD(){drawer.classList.remove('on');dbg.classList.remove('on')}
+document.querySelectorAll('.kcard').forEach(c=>c.addEventListener('click',e=>{if(e.target.closest('button'))return;openD()}));
+dbg.addEventListener('click',closeD);
+document.getElementById('dclose').addEventListener('click',closeD);
+document.getElementById('dclose2').addEventListener('click',closeD);
+const TPL=[
+  {c:'var(--green)',t:'Chegou a coleção Inverno 26',b:'Olá, <b>Passo Certo</b>! Separamos os modelos que mais saem no atacado: mocassim, scarpin e bota, com preço de lojista.',cta:'Ver catálogo e montar pedido',s:'Chegou a coleção Inverno 26, dá uma olhada 👞'},
+  {c:'#B25E2E',t:'Faz tempo que a gente não se vê',b:'Olá, <b>Passo Certo</b>! Sentimos sua falta por aqui. Seu mix costuma girar bem, então guardamos os lançamentos que combinam com sua loja.',cta:'Ver novidades',s:'Sentimos sua falta, tem novidade te esperando'},
+  {c:'var(--red)',t:'Últimas peças com preço de queima',b:'Olá, <b>Passo Certo</b>! Fim de coleção: grades fechando com desconto de atacado. Enquanto durar o estoque.',cta:'Aproveitar a queima',s:'Últimas peças, preço de queima 🔥'},
+  {c:'var(--gold)',t:'Uma condição especial pra você',b:'Olá, <b>Passo Certo</b>! Como um dos nossos melhores clientes, liberamos uma condição exclusiva neste pedido.',cta:'Ver condição',s:'Condição exclusiva pra você'},
+  {c:'var(--amber)',t:'Um recado rápido da Biaritz',b:'Olá, <b>Passo Certo</b>! Passando pra avisar sobre o funcionamento e os prazos desta semana.',cta:'Saiba mais',s:'Um recado da Biaritz'},
+  {c:'var(--ink)',t:'Bem-vindo à Biaritz',b:'Olá, <b>Passo Certo</b>! Seu cadastro está pronto. Já pode montar o pedido com preço de atacado direto pelo catálogo.',cta:'Montar meu primeiro pedido',s:'Bem-vindo! Seu acesso ao atacado está liberado'}
+];
+document.querySelectorAll('.tpl').forEach((t,i)=>t.addEventListener('click',()=>{
+  document.querySelectorAll('.tpl').forEach(x=>x.classList.toggle('on',x===t));
+  const d=TPL[i],p=document.querySelector('.mprev');
+  p.querySelector('.top').style.background=d.c;
+  p.querySelector('.cta').style.background=d.c;
+  p.querySelector('.bd h4').textContent=d.t;
+  p.querySelector('.bd p').innerHTML=d.b;
+  p.querySelector('.cta').textContent=d.cta;
+  document.querySelector('.card.mail input[type=text]').value=d.s;
+}));
+document.querySelectorAll('.aud .seg').forEach(s=>s.addEventListener('click',()=>{
+  document.querySelectorAll('.aud .seg').forEach(x=>x.classList.toggle('on',x===s));
+  const n=s.querySelector('.ct').textContent.trim();
+  const c=document.querySelector('.aud .count');
+  c.innerHTML='<b>'+n+'</b> clientes selecionados neste disparo';
+}));
+document.getElementById('nav').addEventListener('click',e=>{
+  const b=e.target.closest('.tab'); if(!b) return;
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('.tela').forEach(s=>s.classList.toggle('on',s.id===b.dataset.t));
+  window.scrollTo({top:0});
+});
+if(location.hash){const id=location.hash.replace('#','').replace('tab-','');
+  if(location.hash.startsWith('#tab-'))document.getElementById('backprop').style.display='none';
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.t===id));
+  document.querySelectorAll('.tela').forEach(s=>s.classList.toggle('on',s.id===id));
+}
+</script>
+</body>
+</html>
