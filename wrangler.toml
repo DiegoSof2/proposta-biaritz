@@ -2,6 +2,9 @@ name = "proposta-biaritz"
 main = "worker/index.js"
 compatibility_date = "2024-09-23"
 
+# Endereco gratuito da Cloudflare para esta proposta (nao usa dominio da Biaritz).
+workers_dev = true
+
 # Static assets servidos antes do Worker; /auth/* e /api/* caem no Worker.
 # directory = "site" -> raiz do domínio = pasta site/ (igual ao Pages: / = catálogo).
 [assets]
